@@ -3,28 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>군포시립도서관</title>
-	<link rel="stylesheet" href="css/common_style.css"/>
-	<link rel="stylesheet" href="css/style.css"/>
-	<script src="js/popup.js"></script>
-	<script src="js/count.js"></script>
-	<script src="js/jquery-1.9.0.min.js"></script>
-	<script src="js/icon.js"></script>
-	<script src="js/jquery.easing.1.3.min.js"></script>
-	<script src="js/jquery-ui-1.10.4.custom.min.js"></script> 
-	<script src="js/jquery.bxslider.min.js"></script> 
-	<script src="js/jquery.cookie.js"></script> 
-	<script src="js/guide.js"></script>
-	<script src="js/weather.js"></script>
-	<script src="js/common.js"></script>
-	<script src="js/index.js"></script>
-	<script src="js/html5div.js"></script>
-	<script src="js/html5shiv.js"></script>
+	<link rel="stylesheet" href="./main/css/common_style.css"/>
+	<link rel="stylesheet" href="./main/css/style2.css"/>
+	<script src="./main/js/popup.js"></script>
+	<script src="./main/js/count.js"></script>
+	<script src="./main/js/jquery-1.9.0.min.js"></script>
+	<script src="./main/js/icon.js"></script>
+	<script src="./main/js/jquery.easing.1.3.min.js"></script>
+	<script src="./main/js/jquery-ui-1.10.4.custom.min.js"></script> 
+	<script src="./main/js/jquery.bxslider.min.js"></script> 
+	<script src="./main/js/jquery.cookie.js"></script> 
+	<script src="./main/js/guide.js"></script>
+	<script src="./main/js/weather2.js"></script>
+	<script src="./main/js/common2.js"></script>
+	<script src="./main/js/index.js"></script>
+	<script src="./main/js/html5div.js"></script>
+	<script src="./main/js/html5shiv.js"></script>
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./main/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./main/favicon/favicon-16x16.png">
 	<script>
 
 			var tid;
@@ -47,7 +47,7 @@
 				cnt--;
 				if(cnt < 0) {
 					clearInterval(tid);
-					self.location = "sub9/sub9.php";
+					//self.location = "login/login.php";
 				}
 			};
 			function time_format(s) {
@@ -78,8 +78,8 @@
 			<?php include "./header.php";?>
 		</header>	
 		<section>
-			<?php include "include/main.php";?>
+			<?php include "./main.php";?>
 		</section>
-		<?php include "include/footer.php";?>
+			<?php include "./footer.php";?>
 </body>
 </html>

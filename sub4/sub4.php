@@ -3,31 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>군포시립도서관</title>
-	<link rel="stylesheet" href="../include/css/sub_common_style.css"/>
+	<link rel="stylesheet" href="../main/css/sub_common_style.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<script src="js/cal.js"></script>
-	<script src="../include/js/jquery-1.9.0.min.js"></script>
-	<script src="../include/js/hl.js"></script>
-	<script src="../include/js/html5div.js"></script>
-	<script src="../include/js/html5shiv.js"></script>
-	<script src="../include/js/common.js"></script>
+	<script src="../main/js/jquery-1.9.0.min.js"></script>
+	<script src="../main/js/hl.js"></script>
+	<script src="../main/js/html5div.js"></script>
+	<script src="../main/js/html5shiv.js"></script>
+	<script src="../main/js/common.js"></script>
+	<script>
+    jQuery(document).ready(function(){
+        $('.m_menu > li').eq(7).addClass('on');
+        $('.m_menu > li').eq(7).addClass('onn');
+    });
+    </script>	
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
-	<link rel="icon" type="image/png" sizes="32x32" href="../include/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../include/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../include/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
 </head>
 <body>
 	<div id="wrap">
 		<header>
-			<?php include "../include/header.php";?>
+			<?php include "../main/header.php";?>
 		</header>
 		<section>
 			<div id="menu_header">
 				<div class="location">
 					<ul>
-						<li class="first"><a href="../include/index.php">HOME</a></li>
+						<li class="first"><a href="../main/index.php">HOME</a></li>
 						<li><a href="sub4.php">&nbsp;>&nbsp;이용안내</a></li>
 						<li><a href="sub4.php">&nbsp;>&nbsp;도서관 휴관일</a></li>
 					</ul>
@@ -45,7 +51,7 @@
 							<a href="#" class="s_header">이용안내</a>
 							<ul class="s_menu_list">
 								<li><a href="#">공지사항</a></li>
-								<li><a href="../include/sub2/sub2.php">자주하는질문</a></li>
+								<li><a href="../main/sub2/sub2.php">자주하는질문</a></li>
 								<li><a href="#">공개자료실</a></li>
 								<li><a href="#">이용시간</a></li>
 								<li><a href="#">대출회원가입안내</a></li>
@@ -95,7 +101,7 @@
 										<option>하늘정원작은도서관</option>
 										<option>꿈드림작은도서관</option>
 										</select>
-										<button type="submit"><img src="../include/images/btn_board_search.png" alt="검색"></button>
+										<button type="submit"><img src="../main/images/btn_board_search.png" alt="검색"></button>
 									</p>
 								</div>
 						</div>
@@ -111,7 +117,7 @@
 				</div>
 			</div>
 		</section>
-		<?php include "../include/footer.php";?>
+		<?php include "../main/footer.php";?>
 </body>
 </html>
 		

@@ -1,5 +1,5 @@
 <?php 
-	include "include/define.php";
+	include "./include/define.php";
 
 	session_start();
 	if(isset($_SESSION["userid"]))$userid= $_SESSION["userid"];
@@ -20,7 +20,7 @@
 			<div id="main_top">
 				<div id="logo">
 					<h1><span>군포시도서관</span></h1>
-					<a class="show_balloon" title="홈 화면으로 이동합니다." href="index.php" tabindex="1"><img src="include/images/library_logo.png" alt="도서관로고"/></a>
+					<a class="show_balloon" title="홈 화면으로 이동합니다." href="index.php" tabindex="1"><img src="./main/images/library_logo.png" alt="도서관로고"/></a>
 				</div>
 
 				<div class="counter_logout">
@@ -53,10 +53,10 @@
 ?>
 						<li class="show_balloon" title="군포시립도서관 사이트맵으로 이동합니다."><a href="#">사이트맵</a></li>
 						<li class="show_balloon" title="영문페이지로 이동합니다."><a href="#">ENG</a></li>
-						<li class="social show_balloon" title="트위터로 이동"><a href="#"><img src="include/images/top_sns_twitter.png" alt="트위터"/></a></li>
-						<li class="social show_balloon" title="인스타그램으로 이동"><a href="#"><img src="include/images/top_sns_insta.png" alt="인스타그램"/></a></li>
-						<li class="social show_balloon" title="페이스북으로 이동"><a href="#"><img src="include/images/top_sns_facebook.png" alt="페이스북"/></a></li>
-						<li class="social show_balloon" title="유튜브로 이동"><a href="#"><img src="include/images/top_sns_youtube.png" alt="유튜브"/></a></li>
+						<li class="social show_balloon" title="트위터로 이동"><a href="#"><img src="./main/images/top_sns_twitter.png" alt="트위터"/></a></li>
+						<li class="social show_balloon" title="인스타그램으로 이동"><a href="#"><img src="./main/images/top_sns_insta.png" alt="인스타그램"/></a></li>
+						<li class="social show_balloon" title="페이스북으로 이동"><a href="#"><img src="./main/images/top_sns_facebook.png" alt="페이스북"/></a></li>
+						<li class="social show_balloon" title="유튜브로 이동"><a href="#"><img src="./main/images/top_sns_youtube.png" alt="유튜브"/></a></li>
 					</ul>
 			</div>
 			<div id="header_lnb">
@@ -899,7 +899,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="all_menu show_balloon" title="전체메뉴"><a href="#"><img src="include/images/all_menu_size.png" alt="전체메뉴"/></a></li>
+						<li class="all_menu show_balloon" title="전체메뉴"><a href="#"><img src="./main/images/all_menu_size.png" alt="전체메뉴"/></a></li>
 					</ul>
 				</div>
 			</div><!-- id="main_top" -->				

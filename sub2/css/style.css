@@ -24,7 +24,7 @@ img{border: 0; }
 .location ul{width: 275px; margin: 0 auto}
 .location li{float:left; }
 .location a{display: block; float:left;  margin-top: 35px; color:#333333; font-weight: bold;}
-.location li.first{ background: url(../../include/images/home3.png)  no-repeat 2px 3px; background-color:#e8f9f7;     background-position: 0px  39px; padding-left:20px; line-height: 22px;}
+.location li.first{ background: url(../../main/images/home3.png)  no-repeat 2px 3px; background-color:#e8f9f7;     background-position: 0px  39px; padding-left:20px; line-height: 22px;}
 
 
 /* 콘텐츠 */
@@ -82,10 +82,10 @@ select, input{font: 17px '맑은 고딕', sans-serif; color: #333333;}
 #page > div{position: relative; float: left; left: -50%; padding: 8px 19px; margin: 10px; cursor: pointer; }
 #page > .active{cursor: default; color: #0d55a2; font-weight: bold; text-decoration:underline;} 
 .prev,.prev2,.next2, .next{text-indent: -55555px}
-.prev{background: url(../../include/images/btn_pagination_first.png) no-repeat center 7px ;}
-.prev2{background: url(../../include/images/btn_pagination_prev.png) no-repeat center 7px;}
-.next{background: url(../../include/images/btn_pagination_next.png) no-repeat center 7px;}
-.next2{background: url(../../include/images/btn_pagination_last.png) no-repeat center 7px; }
+.prev{background: url(../../main/images/btn_pagination_first.png) no-repeat center 7px ;}
+.prev2{background: url(../../main/images/btn_pagination_prev.png) no-repeat center 7px;}
+.next{background: url(../../main/images/btn_pagination_next.png) no-repeat center 7px;}
+.next2{background: url(../../main/images/btn_pagination_last.png) no-repeat center 7px; }
 
 .check{overflow: hidden;  width: 230px; height:220px;}
 .closed{display:none;}

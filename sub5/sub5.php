@@ -3,18 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>군포시립도서관</title>
-	<link rel="stylesheet" href="../include/css/sub_common_style.css"/>
+	<link rel="stylesheet" href="../main/css/sub_common_style.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<script src="../include/js/jquery-1.9.0.min.js"></script>
-	<script src="../include/js/html5div.js"></script>
-	<script src="../include/js/html5shiv.js"></script>
-	<script src="../include/js/common.js"></script>
+	<script src="../main/js/jquery-1.9.0.min.js"></script>
+	<script src="../main/js/html5div.js"></script>
+	<script src="../main/js/html5shiv.js"></script>
+	<script src="../main/js/common.js"></script>
+	<script>
+    jQuery(document).ready(function(){
+        $('.m_menu > li').eq(6).addClass('on');
+        $('.m_menu > li').eq(6).addClass('onn');
+    });
+    </script>		
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
-	<link rel="icon" type="image/png" sizes="32x32" href="../include/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../include/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../include/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
 <!--[if lt ie 9]> 
 		<link rel="stylesheet" href="css/non-ie9.css" rel="stylesheet"/>
 <![endif]-->
@@ -22,13 +28,13 @@
 <body>
 	<div id="wrap">
 		<header>
-			<?php include "../include/header.php";?>
+			<?php include "../main/header.php";?>
 		</header>
 		<section>
 			<div id="menu_header">
 				<div class="location">
 					<ul>
-						<li class="first"><a href="../include/index.php">HOME</a></li>
+						<li class="first"><a href="../main/index.php">HOME</a></li>
 						<li><a href="sub5.php">&nbsp;>&nbsp;참여마당</a></li>
 						<li><a href="sub5.php">&nbsp;>&nbsp;한줄감상</a></li>
 					</ul>	
@@ -62,7 +68,7 @@
 						<div class="contents cf">
 							<div class="content">
 								<div class="contents_box contentsboxfirst"><p>1</p></div>
-								<div class="img_box"><img src="../include/images/book1.jpg" alt="별빛 전사 소은하"/></div>					
+								<div class="img_box"><img src="../main/images/book1.jpg" alt="별빛 전사 소은하"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">별빛 전사 소은하</a></div>
 									<p>전수경</p>
@@ -77,7 +83,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>2</p></div>
-								<div class="img_box"><img src="../include/images/book2.jpg" alt="세상보다 한 걸음 뒤에서 걸어라"/></div>					
+								<div class="img_box"><img src="../main/images/book2.jpg" alt="세상보다 한 걸음 뒤에서 걸어라"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">세상보다 한 걸음 뒤에서 걸어라</a></div>
 									<p>신동소</p>
@@ -97,7 +103,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>3</p></div>
-								<div class="img_box"><img src="../include/images/book3.jpg" alt="나무집"/></div>					
+								<div class="img_box"><img src="../main/images/book3.jpg" alt="나무집"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">나무집</a></div>
 									<p>톨만,마리예</p>
@@ -114,7 +120,7 @@
 								</div>	
 							<div class="content">
 								<div class="contents_box"><p>4</p></div>
-								<div class="img_box"><img src="../include/images/book4.jpg" alt="걱정상자"/></div>					
+								<div class="img_box"><img src="../main/images/book4.jpg" alt="걱정상자"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">걱정상자</a></div>
 									<p>조미자</p>
@@ -141,7 +147,7 @@
 								</div>	
 							<div class="content">
 								<div class="contents_box"><p>5</p></div>
-								<div class="img_box"><img src="../include/images/book5.jpg" alt="앤티야 커서 뭐가 될래?"/></div>					
+								<div class="img_box"><img src="../main/images/book5.jpg" alt="앤티야 커서 뭐가 될래?"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">앤티야 커서 뭐가 될래?</a></div>
 									<p>김서정</p>
@@ -167,7 +173,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>6</p></div>
-								<div class="img_box"><img src="../include/images/book6.jpg" alt="지금 다시, 헌법"/></div>					
+								<div class="img_box"><img src="../main/images/book6.jpg" alt="지금 다시, 헌법"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">지금 다시, 헌법 </a></div>
 									<p>차병직</p>
@@ -191,7 +197,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>7</p></div>
-								<div class="img_box"><img src="../include/images/book7.jpg" alt="내 차를 운전하기 위해서는"/></div>					
+								<div class="img_box"><img src="../main/images/book7.jpg" alt="내 차를 운전하기 위해서는"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">내 차를 운전하기 위해서는</a></div>
 									<p>채인선</p>
@@ -208,7 +214,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>8</p></div>
-								<div class="img_box"><img src="../include/images/book8.jpg" alt="나는 풍요로웠고, 지구는 달라졌다"/></div>					
+								<div class="img_box"><img src="../main/images/book8.jpg" alt="나는 풍요로웠고, 지구는 달라졌다"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">나는 풍요로웠고, 지구는 달라졌다</a></div>
 									<p>저런,호프</p>
@@ -226,7 +232,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>9</p></div>
-								<div class="img_box"><img src="../include/images/book9.jpg" alt="홀로 선 자본주의 "/></div>					
+								<div class="img_box"><img src="../main/images/book9.jpg" alt="홀로 선 자본주의 "/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">홀로 선 자본주의 </a></div>
 									<p>밀라노비치, 브랑코</p>
@@ -249,7 +255,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>10</p></div>
-								<div class="img_box"><img src="../include/images/book10.jpg" alt="(하룻밤에 읽는)영국사"/></div>					
+								<div class="img_box"><img src="../main/images/book10.jpg" alt="(하룻밤에 읽는)영국사"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">(하룻밤에 읽는)영국사</a></div>
 									<p>안병억</p>
@@ -293,7 +299,7 @@
 			</div>
 			
 		</section>
-		<?php include "../include/footer.php";?>
+		<?php include "../main/footer.php";?>
 </body>
 </html>
 				

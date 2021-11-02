@@ -31,10 +31,10 @@
 					<div class="f_logo">
 						<p>
 							<a href="https://validator.w3.org/unicorn/check?ucn_uri=koeyhni.dothome.co.kr%2Fproject01%2Fsub2%2Fsub2.html&ucn_task=conformance#" target="_blank" class="w3c">
-							<img style="border:0;width:132px;height:48px" src="include/images/vcss-blue.gif" alt="올바른 CSS입니다!">
+							<img style="border:0;width:132px;height:48px" src="main/images/vcss-blue.gif" alt="올바른 CSS입니다!">
 							</a>
 						</p>
-						<img src="include/images/logo-gp.jpg" alt="군포시립도서관"/>
+						<img src="main/images/logo-gp.jpg" alt="군포시립도서관"/>
 						<p>Copyright&copy; 2017 GUNPO MUNICIPAL LIBRARY.<br/> ALL RIGHT RESERVED.</p>
 					</div>
 				</div>
@@ -42,20 +42,67 @@
 				</div>
 			</div>	
 		</footer>
+
 	</div><!-- id="wrap" -->
+	<div class="popup">
+		<p class="popup_title">산본도서관 리모델링 공사에 따른<br/><span>도서반납기&middot;주차장 이용 불가안내</span></p>
+		<ul class="popup_list">
+			<li class="stop_day"><span>이용불가 기간</span>
+				<ul>
+					<li class="text_list"><strong>주차장</strong> :  2021년 09월 24일 &#40;금&#41; 07&#58;00 &#126; 재개관까지</li>
+					<li class="text_list"><strong>반납기</strong> :  2021년 09월 27일 &#40;월&#41; 07&#58;00 &#126; 재개관까지</li>
+					<!-- <li class="popup_sub">※ 2021년 09월 27일 &#40;월&#41; 부터 산본도서관 내 대형차량 출입으로 <br/> 위험하오니 출입을 삼가 주시기 바랍니다.</li> -->
+				</ul>
+			</li>
+		</ul>
+			<div id="count_wrap">
+				<h3 id="countment">재개관까지</h3>
+				<div class="counter">
+				<script>ddaycount()</script>
+					<ul class="cf">
+						<li id="countD" class="firstli fl">
+							<img src="./main/images/num0.png" width="20" id="day100" class="fl" />
+							<img src="./main/images/num0.png" width="20" id="day10" class="fl" />
+							<img src="./main/images/num0.png" width="20" id="day1" class="fl" />
+							<p>일</p>
+						</li>
+						<li id="counterH" class="fl">
+							<img src="./main/images/num0.png" width="20" id="hour10" class="fl" alt="시간10의자리" />
+							<img src="./main/images/num0.png" width="20" id="hour1" class="fl" alt="시간1의자리" />
+							<p>시</p>
+						</li>
+						<li id="counterM" class="fl">
+							<img src="./main/images/num0.png" width="20" id="min10" class="fl" alt="분10의자리" />
+							<img src="./main/images/num0.png" width="20" id="min1" class="fl" alt="분1의자리" />
+							<p>분</p>
+						</li>
+						<li id="counterS" class="fl">
+							<img src="./main/images/num0.png" width="20" id="sec10" class="fl" alt="초10의자리" />
+							<img src="./main/images/num0.png" width="20" id="sec1" class="fl" alt="초1의자리" />
+							<p>초</p>
+						</li>
+					</ul>
+					<br/> <br/>
+				</div>
+			</div>
+		<div class="pop_btn">
+			<div class="close_btndy">하루동안 열지 않음</div>
+			<div class="close_btn"></div>
+		</div>
+	</div>
 	<span class="quick_toggle qm"></span>
 	<div class="quickmenu">
 		<a href class="quickhead">QUICK MENU</a>
 		<ul class="quick_list">
-			<li class="quick"><a href="sub9/sub9.php">로그인</a></li>
-			<li class="quick"><a href="sub6/sub6.php">추천도서</a></li>
-			<li class="quick"><a href="sub7/sub7.php">오디오북</a></li>
-			<li class="quick"><a href="sub1/sub1.php">작은도서관</a></li>
-			<li class="quick"><a href="sub8/sub8.php">열람실좌석현황</a></li>
-			<li class="quick"><a href="sub4/sub4.php">도서관 휴관일</a></li>
-			<li class="quick"><a href="sub5/sub5.php">한줄감상</a></li>
-			<li class="quick"><a href="sub2/sub2.php">자주하는질문</a></li>
-			<li class="quick"><a href="sub3/sub3.php">인사말</a></li>
+			<li class="quick"><a href="sub9/sub9.html">로그인</a></li>
+			<li class="quick"><a href="sub6/sub6.html">추천도서</a></li>
+			<li class="quick"><a href="sub7/sub7.html">오디오북</a></li>
+			<li class="quick"><a href="sub1/sub1.html">작은도서관</a></li>
+			<li class="quick"><a href="sub8/sub8.html">열람실좌석현황</a></li>
+			<li class="quick"><a href="sub4/sub4.html">도서관 휴관일</a></li>
+			<li class="quick"><a href="sub5/sub5.html">한줄감상</a></li>
+			<li class="quick"><a href="sub2/sub2.html">자주하는질문</a></li>
+			<li class="quick"><a href="sub3/sub3.html">인사말</a></li>
 			<li class="top"><a href="#wrap">TOP</a></li>
 		</ul>
 	</div>

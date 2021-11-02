@@ -3,18 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>군포시립도서관</title>
-	<link rel="stylesheet" href="../include/css/sub_common_style.css"/>
+	<link rel="stylesheet" href="../main/css/sub_common_style.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<script src="../include/js/jquery-1.9.0.min.js"></script>
-	<script src="../include/js/html5div.js"></script>
-	<script src="../include/js/html5shiv.js"></script>
-	<script src="../include/js/common.js"></script>
+	<script src="../main/js/jquery-1.9.0.min.js"></script>
+	<script src="../main/js/html5div.js"></script>
+	<script src="../main/js/html5shiv.js"></script>
+	<script src="../main/js/common.js"></script>
+	<script>
+    jQuery(document).ready(function(){
+        $('.m_menu > li').eq(0).addClass('on');
+        $('.m_menu > li').eq(0).addClass('onn');
+    });
+    </script>	
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
-	<link rel="icon" type="image/png" sizes="32x32" href="../include/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../include/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../include/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
 <!--[if lt ie 9]> 
 		<link rel="stylesheet" href="css/non-ie9.css" rel="stylesheet"/>
 <![endif]-->	
@@ -22,13 +28,13 @@
 <body>
 	<div id="wrap">
 		<header>
-			<?php include "../include/header.php";?>
+			<?php include "../main/header.php";?>
 		</header>
 		<section>
 			<div id="menu_header">
 				<div class="location">
 					<ul>
-						<li class="first"><a href="../include/index.php">HOME</a></li>
+						<li class="first"><a href="../main/index.php">HOME</a></li>
 						<li><a href="sub6.php">&nbsp;>&nbsp;자료검색</a></li>
 						<li><a href="sub6.php">&nbsp;>&nbsp;추천도서</a></li>
 					</ul>	
@@ -78,7 +84,7 @@
 						<div class="contents cf">
 							<div class="content">
 								<div class="contents_box contentsboxfirst"><p>1</p></div>
-								<div class="img_box"><img src="../include/images/book11.jpg" alt="오래된 질문"/></div>					
+								<div class="img_box"><img src="../main/images/book11.jpg" alt="오래된 질문"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">오래된 질문</a></div>
 									<p>다큐멘터리 제작팀</p>
@@ -93,7 +99,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>2</p></div>
-								<div class="img_box"><img src="../include/images/book12.jpg" alt="생각이 너무 많은 서른 살에게"/></div>					
+								<div class="img_box"><img src="../main/images/book12.jpg" alt="생각이 너무 많은 서른 살에게"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">생각이 너무 많은 서른 살에게</a></div>
 									<p>김은주</p>
@@ -109,7 +115,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>3</p></div>
-								<div class="img_box"><img src="../include/images/book13.jpg" alt="미드나잇 라이브러리"/></div>					
+								<div class="img_box"><img src="../main/images/book13.jpg" alt="미드나잇 라이브러리"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">미드나잇 라이브러리</a></div>
 									<p>헤이그,매트</p>
@@ -125,7 +131,7 @@
 								</div>	
 							<div class="content">
 								<div class="contents_box"><p>4</p></div>
-								<div class="img_box"><img src="../include/images/book14.jpg" alt="마음을 쓰는 몽당연필"/></div>					
+								<div class="img_box"><img src="../main/images/book14.jpg" alt="마음을 쓰는 몽당연필"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">마음을 쓰는 몽당연필</a></div>
 									<p>류미정</p>
@@ -141,7 +147,7 @@
 								</div>	
 							<div class="content">
 								<div class="contents_box"><p>5</p></div>
-								<div class="img_box"><img src="../include/images/book15.jpg" alt="엄마 마음 설명서"/></div>					
+								<div class="img_box"><img src="../main/images/book15.jpg" alt="엄마 마음 설명서"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">엄마 마음 설명서</a></div>
 									<p>스태들런, 나오미</p>
@@ -157,7 +163,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>6</p></div>
-								<div class="img_box"><img src="../include/images/book16.jpg" alt="가짜 뉴스 팩트체크 하겠습니다"/></div>					
+								<div class="img_box"><img src="../main/images/book16.jpg" alt="가짜 뉴스 팩트체크 하겠습니다"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">가짜 뉴스 팩트체크 하겠습니다</a></div>
 									<p>조아라</p>
@@ -173,7 +179,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>7</p></div>
-								<div class="img_box"><img src="../include/images/book17.gif" alt="노마드랜드"/></div>					
+								<div class="img_box"><img src="../main/images/book17.gif" alt="노마드랜드"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">노마드랜드</a></div>
 									<p>브루더, 제시카</p>
@@ -189,7 +195,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>8</p></div>
-								<div class="img_box"><img src="../include/images/book18.jpg" alt="바이러스 과학 수업"/></div>					
+								<div class="img_box"><img src="../main/images/book18.jpg" alt="바이러스 과학 수업"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">바이러스 과학 수업</a></div>
 									<p>섀들리히, 수잔</p>
@@ -205,7 +211,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>9</p></div>
-								<div class="img_box"><img src="../include/images/book19.jpg" alt="오전의 살림 탐구"/></div>					
+								<div class="img_box"><img src="../main/images/book19.jpg" alt="오전의 살림 탐구"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">오전의 살림 탐구</a></div>
 									<p>정이숙</p>
@@ -221,7 +227,7 @@
 							</div>
 							<div class="content">
 								<div class="contents_box"><p>10</p></div>
-								<div class="img_box"><img src="../include/images/book20.jpg" alt="오케스트라"/></div>					
+								<div class="img_box"><img src="../main/images/book20.jpg" alt="오케스트라"/></div>					
 								<div class="con_box_header">
 									<div class="book_title"><a href="#">오케스트라</a></div>
 									<p>누오보, 아발론</p>
@@ -250,6 +256,6 @@
 			</div>
 			
 		</section>
-		<?php include "../include/footer.php";?>
+		<?php include "../main/footer.php";?>
 </body>
 </html>		

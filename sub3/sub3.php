@@ -3,29 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>군포시립도서관</title>
-	<link rel="stylesheet" href="../include/css/sub_common_style.css"/>
+	<link rel="stylesheet" href="../main/css/sub_common_style.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<script src="../include/js/jquery-1.9.0.min.js"></script>
-	<script src="../include/js/html5div.js"></script>
-	<script src="../include/js/html5shiv.js"></script>
-	<script src="../include/js/common.js"></script>
+	<script src="../main/js/jquery-1.9.0.min.js"></script>
+	<script src="../main/js/html5div.js"></script>
+	<script src="../main/js/html5shiv.js"></script>
+	<script src="../main/js/common.js"></script>
+	<script>
+    jQuery(document).ready(function(){
+        $('.m_menu > li').eq(8).addClass('on');
+        $('.m_menu > li').eq(8).addClass('onn');
+    });
+    </script>		
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
-	<link rel="icon" type="image/png" sizes="32x32" href="../include/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../include/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../include/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
 </head>
 <body>
 	<div id="wrap">
 		<header>
-			<?php include "../include/header.php";?>
+			<?php include "../main/header.php";?>
 		</header>
 		<section>
 			<div id="menu_header">
 				<div class="location">
 					<ul>
-						<li class="first"><a href="../include/index.php">HOME</a></li>
+						<li class="first"><a href="../main/index.php">HOME</a></li>
 						<li><a href="sub3.php">&nbsp;>&nbsp;도서관소개</a></li>
 						<li><a href="sub3.php">&nbsp;>&nbsp;인사말</a></li>
 					</ul>
@@ -56,7 +62,7 @@
 				<div id="sub_right">
 					<div class="introduce">
 						<div class="main_intro">
-							<img src="../include/images/intro_title.gif" alt="꿈이 열리는 창 군포시도서관">
+							<img src="../main/images/intro_title.gif" alt="꿈이 열리는 창 군포시도서관">
 							<p><strong>군포시 도서관을 찾아주셔서 감사합니다.</strong><br/>
 							안녕하십니까?
 							우리도서관의 홈페이지에 오신 것을 진심으로 환영합니다.<br/>
@@ -73,6 +79,6 @@
 				</div>
 			</div>
 		</section>
-		<?php include "../include/footer.php";?>
+		<?php include "../main/footer.php";?>
 </body>
 </html>
