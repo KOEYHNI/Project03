@@ -47,7 +47,7 @@
 				cnt--;
 				if(cnt < 0) {
 					clearInterval(tid);
-					self.location = "";
+					self.location = "sub9/sub9.php";
 				}
 			};
 			function time_format(s) {
