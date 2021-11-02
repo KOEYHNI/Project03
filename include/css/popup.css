@@ -1,0 +1,10 @@
+﻿*{margin: 0; padding: 0; border: 0;}
+	a{display: block;height: 773px;}
+img{margin-top: 5px; margin-left: 5px; border:0;}
+.btn{margin-right: 10px;color: #ffffff; background: #97080c; font-weight: bold; width: 80px; height: 38px;  font-size: 17px; border-radius: 5px;}
+.btn:hover{color: #ffffff; background: #000000; }
+form{float: right; background: #fdd100; font-size: 17px; color: #444444; font-weight: bold;}
+label{margin-right: 10px;}
+input[type=checkbox]{margin-right: 5px;}
+.pop_bottom{background: #fdd100;width:567px;margin-left: 5px; height: 48px;}
+

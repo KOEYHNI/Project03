@@ -1,0 +1,5 @@
+﻿#search_wrap select{margin-top: 2px; height:26px;}
+#search_wrap input {margin-top: 2px;}
+#search_wrap button{position: relative; top: 3px;}
+#qna_board .content_wrap{display: block;}
+#qna_board label{cursor: default;}
