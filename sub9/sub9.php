@@ -84,6 +84,9 @@
 							<div class="button">
 								<button type="button">LOGIN</button>
 							</div>
+							<div class="button join">
+								<button type="button">회원가입</button>
+							</div>
 						</div>
 					</div>
 					<div class="guide_box">

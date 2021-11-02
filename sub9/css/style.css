@@ -22,14 +22,14 @@ img{border: 0; }
 .location ul{width: 232px; margin: 0 auto}
 .location li{float:left; }
 .location a{display: block; float:left;  margin-top: 35px; color:#333333; font-weight: bold;}
-.location li.first{ background: url(../../include/images/home3.png)  no-repeat 2px 3px; background-color:#e8f9f7; background-position: 0px  39px; padding-left:20px; line-height: 22px;}
+.location li.first{ background: url(../../images/home3.png)  no-repeat 2px 3px; background-color:#e8f9f7; background-position: 0px  39px; padding-left:20px; line-height: 22px;}
 /* 사이드 메뉴바 */
 
 #sub_left{float: left; width: 270px;  }
 .side_menu{width:270px; margin-bottom: 10px; margin-top: 20px;box-sizing: border-box; }
 .s_menu_list{width:270px;border-right: 2px solid #e6e6e6; border-left: 2px solid #e6e6e6;box-sizing: border-box;}
 .s_menu_list a{text-indent: 10px;color:#333333;display: block; width: 266px; height: 50px;  font-size: 17px;border-bottom: 2px solid #e6e6e6;padding: 1px; line-height: 50px;}
-.s_menu_list a:hover{ background: url(../../include/images/icon_snb.png) 240px center no-repeat;background-color: #e6e6e6; color:#0d55a2;font-weight: bold; }
+.s_menu_list a:hover{ background: url(../../images/icon_snb.png) 240px center no-repeat;background-color: #e6e6e6; color:#0d55a2;font-weight: bold; }
 
 /* 콘텐츠 */
 #contents_wrap{clear: both; width: 1420px; /* height: 850px; */ margin: 0 auto; }
@@ -50,7 +50,7 @@ img{border: 0; }
  
 
 
-  .mlib_title{clear:both; margin-top:50px; margin-left:115px;width:995px; height:60px; background: #ffffff;  font-size: 22px;    background: url(../../include/images/icon_st.gif) 15px center no-repeat; text-indent: 40px; line-height: 60px; color: #006cb8; font-weight: bold;}
+  .mlib_title{clear:both; margin-top:50px; margin-left:115px;width:995px; height:60px; background: #ffffff;  font-size: 22px;    background: url(../../images/icon_st.gif) 15px center no-repeat; text-indent: 40px; line-height: 60px; color: #006cb8; font-weight: bold;}
 
 
 
@@ -74,9 +74,10 @@ img{border: 0; }
 	.login_top ul li.find a{color:#111111;}
 	.login_top ul li img{float:left; width:40px; height:40px; padding:10px; }
 	.login_top ul li>input{float:left; width:400px; height:50px; margin: 5px; border:none; outline: none; font-size: 20px;}
-	.login_top>.button{background: #ffffff; clear:  both; width: 380px; }
+	.login_top>.button{background: #ffffff; float:left; width: 230px; margin-right:20px; margin-left: 5px; }
+	.login_top>.join{margin-right:5px;  margin-left: 0px;}
 	.button button{background: #ffffff; margin-left: 75px; margin-bottom: 30px; border:0;}
-	.login_top>.button>button {display: block; margin: 0 auto; text-align:center; width:230px; height: 60px; font-size: 17px; text-shadow: none; line-height: 60px; box-shadow: 0 2px 4px rgb(0 0 0 / 15%); color: #ffffff;  border-radius: 30px; font-weight: bold;background:  url(../../include/images/s_menu1.png) center no-repeat; background-color: #ffffff; cursor: pointer;  }
+	.login_top>.button>button {display: block; margin: 0 auto; text-align:center; width:230px; height: 60px; font-size: 17px; text-shadow: none; line-height: 60px; box-shadow: 0 2px 4px rgb(0 0 0 / 15%); color: #ffffff;  border-radius: 30px; font-weight: bold;background:  url(../../images/s_menu1.png) center no-repeat; background-color: #ffffff; cursor: pointer;  }
 	.login_top>.button>button:hover{color:#ffff00; }
 	.guide{color: #cccccc;}
 

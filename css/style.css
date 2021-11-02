@@ -427,8 +427,9 @@ background: linear-gradient(to top, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Fir
 	.guide{color: #cccccc;}
 
 
-.counter_logout{position: relative;top: 3px;left: 950px;color: #555555;font-size: 1em;}
-.counter_logout>input{background: #52c3f1;  color:#ffffff; border: 0;border-radius: 5px; padding: 5px; font-weight: bold;}
+.counter_logout{position: relative;top: 3px;left:905px;margin-left: 20px;0px;color: #555555;font-size: 1em;font-weight: bold;}
+#counter{padding-left:30px;background: url(../images/book_icon.png) left -2px no-repeat; background-size:25px;}
+.counter_logout>input{background: #52c3f1; font-weight: bold;font-size: 0.9em;  color:#ffffff; border: 0;border-radius: 5px; padding: 5px; font-weight: bold; margin-left: 10px;}
 .counter_logout>input:hover{background: #1196cc;}
 #main_top ul.gnb_menu li a { margin-top: 1px;}
 
