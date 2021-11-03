@@ -5,6 +5,7 @@
 	h3{padding-left: 5px; border-left: solid 5px #52c3f1;}
 	#close{margin: 20px 0 0 80px; cursor: pointer;}
 	.close_btn{background:#52c3f1; color:#ffffff; font-weight:bold; width:50px; text-align: center; border-radius:8px; padding: 5px 20px;}
+	.close_btn:hover{background:#1196cc;}
 </style>
 </head>
 <body>
