@@ -37,7 +37,6 @@
 	} else {
 		$logged = $username."(".$userid.")님[level: ".$userlevel.",point: ".$userpoint."]";
 ?>	
-						<li><?=$logged?></li>
 						<li class="show_balloon" title="로그아웃 화면으로 이동합니다."><a href="./login/logout.php">로그아웃</a></li>
 						<li class="show_balloon" title="정보수정 화면으로 이동합니다."><a href="./login/mamber_modify_form.php">정보수정</a></li>											
 <?php 

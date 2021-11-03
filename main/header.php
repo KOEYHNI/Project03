@@ -34,14 +34,14 @@
 ?>	
 						
 						<li class="show_balloon" title="로그아웃 화면으로 이동합니다."><a href="../login/logout.php">로그아웃</a></li>
-						<li class="show_balloon" title="정보수정 화면으로 이동합니다."><a href="../login/mamber_modify_form.php">정보수정</a></li>											
+						<li class="show_balloon" title="마이페이지 화면으로 이동합니다."><a href="../login/mamber_modify_form.php">마이페이지</a></li>											
 <?php 
 	} 
 ?>				
 <?php 
 	if($userlevel==1){
 ?>
-						<li class="show_balloon" title="로그인 화면으로 이동합니다."><a href="../admin/admin.php">관리자 모드</a></li>				
+						<li class="show_balloon" title="관리자 메뉴로 이동합니다."><a href="../admin/admin.php">관리자 메뉴</a></li>				
 <?php 
 	} 
 ?>

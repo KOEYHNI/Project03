@@ -53,7 +53,7 @@
 								</div>
 								<div class="button_lg">
 									<span><a href="../login/logout.php">로그아웃</a></span>
-									<span><a href="../login/mamber_modify_form.php">정보수정</a></span> 
+									<span><a href="../login/mamber_modify_form.php">마이페이지</a></span> 
 <?php 
 	if($userlevel==1){
 ?>
