@@ -5,11 +5,11 @@
 	<title>군포시립도서관</title>
 	<link rel="stylesheet" href="../main/css/sub_common_style.css"/>
 	<link rel="stylesheet" href="css/join.css"/>
-	<script src="../main/js/jquery-1.9.0.min.js"></script>
-	<script src="js/login2.js"></script>
-	<script src="../main/js/html5div.js"></script>
-	<script src="../main/js/html5shiv.js"></script>
-	<script src="../main/js/common.js"></script>
+	<script src="../main/main/js/jquery-1.9.0.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="../main/main/js/html5div.js"></script>
+	<script src="../main/main/js/html5shiv.js"></script>
+	<script src="../main/main/js/common.js"></script>
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>

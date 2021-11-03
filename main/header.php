@@ -19,10 +19,10 @@
 			<div id="main_top">
 				<div id="logo">
 					<h1><span>군포시도서관</span></h1>
-					<a class="show_balloon" title="홈 화면으로 이동합니다." href="../index.php" tabindex="1"><img src="../main/images/library_logo.png" alt="도서관로고"/></a>
+					<a class="show_balloon" title="홈 화면으로 이동합니다." href="../main/index.php" tabindex="1"><img src="../main/images/library_logo.png" alt="도서관로고"/></a>
 				</div>
 					<ul class="gnb_menu">
-						<li class="show_balloon" title="홈 화면으로 이동합니다."><a href="../index.php">홈</a></li>
+						<li class="show_balloon" title="홈 화면으로 이동합니다."><a href="../main/index.php">홈</a></li>
 <?php 
 	if(!$userid){
 ?>	

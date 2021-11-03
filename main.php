@@ -35,7 +35,7 @@
 									</ul>
 									<span class="icon_bar">|</span>
 									<ul class="s_icon2">
-										<li><a href="sub6/sub6.html">추천 도서</a></li>
+										<li><a href="sub6/sub6.php">추천 도서</a></li>
 									</ul>
 									<span class="icon_bar">|</span>
 									<ul class="s_icon3">
@@ -59,16 +59,16 @@
 							<div class="search_box">
 								<span>추천도서</span>
 								<p class="rc_book">
-									<a href="sub6/sub6.html" style="top:0%;">오래된 질문</a>
-									<a href="sub6/sub6.html">생각이 너무 많은 서른 살에게</a>
-									<a href="sub6/sub6.html">미드나잇 라이브러리</a>
-									<a href="sub6/sub6.html">마음을 쓰는 몽당연필</a>
-									<a href="sub6/sub6.html">엄마 마음 설명서</a>
-									<a href="sub6/sub6.html">가짜 뉴스 팩트체크 하겠습니다.</a>
-									<a href="sub6/sub6.html">노마드 랜드</a>
-									<a href="sub6/sub6.html">바이러스 과학 수업</a>
-									<a href="sub6/sub6.html">오전의 살림 탐구</a> 
-									<a href="sub6/sub6.html">오케스트라</a>
+									<a href="sub6/sub6.php" style="top:0%;">오래된 질문</a>
+									<a href="sub6/sub6.php">생각이 너무 많은 서른 살에게</a>
+									<a href="sub6/sub6.php">미드나잇 라이브러리</a>
+									<a href="sub6/sub6.php">마음을 쓰는 몽당연필</a>
+									<a href="sub6/sub6.php">엄마 마음 설명서</a>
+									<a href="sub6/sub6.php">가짜 뉴스 팩트체크 하겠습니다.</a>
+									<a href="sub6/sub6.php">노마드 랜드</a>
+									<a href="sub6/sub6.php">바이러스 과학 수업</a>
+									<a href="sub6/sub6.php">오전의 살림 탐구</a> 
+									<a href="sub6/sub6.php">오케스트라</a>
 								</p>
 								<ul class="search_bar">
 									<li><input type="text" name="search_tent" class="search_text guideText" value="서명, 저자, 키워드 등 검색어를 입력하세요." ></li>
@@ -144,7 +144,7 @@
 									<span class="close_day">21</span>
 									<span class="close_day">22</span>
 									<span class="close_day">24</span>
-									<a href="sub4/sub4.html">달력<br/>보기</a>
+									<a href="sub4/sub4.php">달력<br/>보기</a>
 							</div>
 							<div id="center_library">
 								<a href="#" class="hope_bn fl">
@@ -162,8 +162,8 @@
 								<li class="intro_icon2"><a href="#" class="i_icon2"><span></span>희망도서 신청/조회</a></li>
 								<li class="intro_icon3"><a href="#" class="i_icon3"><span></span>문화행사신청</a></li>
 								<li class="intro_icon4"><a href="#" class="i_icon4"><span></span>디지털자료실 예약</a></li>
-								<li class="intro_icon5"><a href="sub8/sub8.html" class="i_icon5"><span></span>열람실좌석현황</a></li>
-								<li class="intro_icon6"><a href="sub7/sub7.html" class="i_icon6"><span></span>전자도서관</a></li>
+								<li class="intro_icon5"><a href="sub8/sub8.php" class="i_icon5"><span></span>열람실좌석현황</a></li>
+								<li class="intro_icon6"><a href="sub7/sub7.php" class="i_icon6"><span></span>전자도서관</a></li>
 								<li class="intro_icon7"><a href="#" class="i_icon7"><span></span>자원봉사신청</a></li>
 								<li class="intro_icon8"><a href="#" class="i_icon8"><span></span>누리천문대</a></li>
 							</ul>
@@ -233,23 +233,23 @@
 								<div class="bookList">
 									<ul>
 										<li class="slideshow">
-											<a href="sub6/sub6.html"><span><img src="./main/images/book11.jpg" width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
-											<a href="sub6/sub6.html" class="alt"><span><img src="./main/images/book12.jpg" width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
-											<a href="sub6/sub6.html" class="alt"><span><img src="./main/images/book13.jpg" width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
-											<a href="sub6/sub6.html" class="alt"><span><img src="./main/images/book14.jpg"width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php"><span><img src="./main/images/book11.jpg" width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php" class="alt"><span><img src="./main/images/book12.jpg" width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php" class="alt"><span><img src="./main/images/book13.jpg" width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php" class="alt"><span><img src="./main/images/book14.jpg"width="147" height="206" alt="book1" class="frame"/><span class="hit"></span></span></a>
 										</li>
 										<li class="slideshow second">
-											<a href="sub6/sub6.html"><span><img src="./main/images/book15.jpg" width="147" height="206" alt="book2" class="frame"/><span class="hit"></span></span></a>
-											<a href="sub6/sub6.html" class="alt"><span><img src="./main/images/book16.jpg" width="147" height="206" alt="book2" class="frame"/><span class="hit"></span></span></a>
-											<a href="sub6/sub6.html" class="alt"><span><img src="./main/images/book17.gif" width="147" height="206" alt="book2" class="frame"/><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php"><span><img src="./main/images/book15.jpg" width="147" height="206" alt="book2" class="frame"/><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php" class="alt"><span><img src="./main/images/book16.jpg" width="147" height="206" alt="book2" class="frame"/><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php" class="alt"><span><img src="./main/images/book17.gif" width="147" height="206" alt="book2" class="frame"/><span class="hit"></span></span></a>
 										</li>
 										<li class="slideshow last">
-											<a href="sub6/sub6.html"><span><img src="./main/images/book18.jpg" width="147" height="206" alt="book3" /><span class="hit"></span></span></a>
-											<a href="sub6/sub6.html" class="alt"><span><img src="./main/images/book19.jpg" width="147" height="206" alt="book3" /><span class="hit"></span></span></a>
-											<a href="sub6/sub6.html" class="alt"><span><img src="./main/images/book20.jpg" width="147" height="206" alt="book3" /><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php"><span><img src="./main/images/book18.jpg" width="147" height="206" alt="book3" /><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php" class="alt"><span><img src="./main/images/book19.jpg" width="147" height="206" alt="book3" /><span class="hit"></span></span></a>
+											<a href="sub6/sub6.php" class="alt"><span><img src="./main/images/book20.jpg" width="147" height="206" alt="book3" /><span class="hit"></span></span></a>
 										</li>
 									</ul>
-									<a href="sub6/sub6.html" class="bn_title">추천 도서</a>
+									<a href="sub6/sub6.php" class="bn_title">추천 도서</a>
 								</div>
 							</div>
 						</div>	

@@ -217,7 +217,7 @@ border-radius: 20px;}
 .pop_btn{width: 495px; height: 30px; position: absolute; background:#52c3f1; color: #ffffff;right:0px; bottom: 0px; line-height: 35px; }
 .close_btndy{float:right; margin-right: 10px; padding-right: 20px; background:  url(../images/closed.png) center right no-repeat; background-size: 12px 12px; cursor: pointer;}
 .close_btndy:hover{color:#333333;background:  url(../images/closed_on.png) center right no-repeat;background-size: 12px 12px;}
-.close_btn{position:absolute; right: 0px; top: -368px; background:  url(../images/closed.png) center center no-repeat; background-size: 12px 12px; cursor: pointer; background-color: #52c3f1;width: 28px; height: 28px; }
+.close_btn{position:absolute; right: 0px; top: -372px; background:  url(../images/closed.png) center center no-repeat; background-size: 12px 12px; cursor: pointer; background-color: #52c3f1;width: 28px; height: 28px; }
 .close_btn:hover{background:  #1196cc url(../images/closed_on.png) center center no-repeat;background-size: 12px 12px;}
 
 #count_wrap{text-align:center; padding-bottom:10px; }

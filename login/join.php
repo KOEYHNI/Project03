@@ -3,19 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>군포시립도서관</title>
-	<link rel="stylesheet" href="../main/css/sub_common_style.css"/>
+	<link rel="stylesheet" href="../include/css/sub_common_style.css"/>
 	<link rel="stylesheet" href="css/join.css"/>
-	<script src="../main/js/jquery-1.9.0.min.js"></script>
-	<script src="js/login2.js"></script>
-	<script src="../main/js/html5div.js"></script>
-	<script src="../main/js/html5shiv.js"></script>
-	<script src="../main/js/common.js"></script>
+	<script src="../include/js/jquery-1.9.0.min.js"></script>
+	<script src="js/login.js"></script>
+	<script src="../include/js/html5div.js"></script>
+	<script src="../include/js/html5shiv.js"></script>
+	<script src="../include/js/common.js"></script>
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
-	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../include/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../include/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../include/favicon/favicon-16x16.png">
 	<script> 
 		function check_input() 
 		{
@@ -85,7 +85,7 @@
 <body>
 	<div id="wrap">
 		<header>
-			<?php include "../main/header.php";?>
+			<?php include "../include/header.php";?>
 		</header>
 		<section>
 			<div id="menu_header">
@@ -132,7 +132,7 @@
 							<div class="form id"> 
 								<div class="col1">아이디</div> 
 								<div class="col2 login"> 
-									<img src="../main/images/user.png" alt="ID"/>
+									<img src="../images/user.png" alt="ID"/>
 									<input type="text" name="id" class="guideText" placeholder="아이디" >
 								</div>  
 								<div class="col3"> 
@@ -144,7 +144,7 @@
 							<div class="form pass"> 
 								<div class="col1">비밀번호</div> 
 								<div class="col2"> 
-									<img src="../main/images/lock.png" alt="PW"/>
+									<img src="../images/lock.png" alt="PW"/>
 									<input type="password" id="pass" name="pass" class="guideText" placeholder="비밀번호"/>
 								</div>  
 							</div> 
@@ -153,7 +153,7 @@
 							<div class="form pass"> 
 								<div class="col1">비밀번호 확인</div> 
 								<div class="col2"> 
-									<img src="../main/images/lock.png" alt="PW"/>
+									<img src="../images/lock.png" alt="PW"/>
 									<input type="password"  name="pass_confirm" class="guideText" placeholder="비밀번호"/>
 								</div>  
 							</div> 
@@ -163,7 +163,7 @@
 								<div class="col1">이름</div> 
 								<div class="col2"> 
 									
-									<img src="../main/images/user.png" alt="ID"/>
+									<img src="../images/user.png" alt="ID"/>
 									<input type="text" name="name" class="guideText" placeholder="이름" >									
 								</div>  
 							</div> 
@@ -173,7 +173,7 @@
 								<div class="col1">이메일</div> 
 								<div class="col2"> 
 									<div class="em1">
-										<img src="../main/images/mail.png" alt="mail"/>
+										<img src="../images/mail.png" alt="mail"/>
 										<input type="text" name="email1"class="guideText" placeholder="아이디">
 									</div>
 									<span>@</span>
@@ -198,6 +198,6 @@
 				</div>
 			</div>
 		</section>
-		<?php include "../main/footer.php";?>
+		<?php include "../include/footer.php";?>
 </body>
 </html>

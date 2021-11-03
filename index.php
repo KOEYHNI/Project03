@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="./main/css/common_style.css"/>
 	<link rel="stylesheet" href="./main/css/style2.css"/>
 	<script src="./main/js/popup.js"></script>
-	<script src="./main/js/count.js"></script>
+	<script src="./main/js/count2.js"></script>
 	<script src="./main/js/jquery-1.9.0.min.js"></script>
 	<script src="./main/js/icon.js"></script>
 	<script src="./main/js/jquery.easing.1.3.min.js"></script>

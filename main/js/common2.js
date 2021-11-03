@@ -1,8 +1,8 @@
 ﻿$(function(){
 	$('.control_panel').css('top','505px');
-	$('.sub_menu').css('top','160px');
+	$('.sub_menu').css('top','142px');
 	setTimeout(function() {
-		$('.control_panel').animate({'top':'528px'},300);
+		$('.control_panel').animate({'top':'546px'},300);
 		$('.sub_menu').animate({'top':'183px'},300);
 		$('#top_event').slideDown();
 	}, 3000);
@@ -151,7 +151,7 @@
 	
 	$('.t_close_btn').on('click',function(){
 		$('#top_event').slideUp();
-		$('.control_panel').css('top','487px');
+		$('.control_panel').css('top','505px');
 		$('.sub_menu').css('top','142px');
 	});
 	
