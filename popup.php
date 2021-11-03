@@ -24,7 +24,7 @@
 	</style>
 </head>
 <body>
-	<a href="sub6/sub6.html" target="_blank"><img src="include/images/javscript_popup.jpg" alt="추천도서"/></a>
+	<a href="sub6/sub6.php" target="_blank"><img src="main/images/javscript_popup.jpg" alt="추천도서"/></a>
 	<div class="pop_bottom">
 		<form>
 			<label><input type="checkbox" name="Notice" value="하루동안 닫기">하루 동안 안 볼래요</label>

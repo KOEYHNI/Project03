@@ -18,6 +18,7 @@
 	<script src="./main/js/common2.js"></script>
 	<script src="./main/js/index.js"></script>
 	<script src="./main/js/html5div.js"></script>
+	<script src="./login/js/login3.js"></script>
 	<script src="./main/js/html5shiv.js"></script>
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
@@ -47,7 +48,7 @@
 				cnt--;
 				if(cnt < 0) {
 					clearInterval(tid);
-					//self.location = "login/login.php";
+					self.location = "login/login_form.php";
 				}
 			};
 			function time_format(s) {

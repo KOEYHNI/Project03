@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <?php
-   include "../include/define.php";
+   include "./include/define.php";
    
    $id   = $_POST["id"];
    $pass = $_POST["pass"];
@@ -49,7 +49,7 @@
             echo("
               <script>
                 // location.href = 'index2.php';
-                location.href = '../main/index.php';
+                location.href = './main/index.php';
               </script>
             ");
         }

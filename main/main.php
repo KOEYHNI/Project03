@@ -3,19 +3,22 @@
 					<div id="intro_contents">
 						<div id="intro_search">
 							<div class="intro_box">
+<?php 
+	if(!$userid){
+?>							
 								<div class="login_box">
 									<div class="login_img">
 										<img src="images/login_icon01.png" alt="로그인을 해주세요"/>
 									</div>
 									<div class="login_top">
 										<form name="login_form" method="post" action="login.php">
-											<ul class="input">
-												<li class="login loginicon">
-													<img src="images/user.png" alt="ID"/>
-													<input type="text" name="id" class="guideText" value="아이디" >
-												</li>
-												<li class="password loginicon"><img src="images/lock.png" alt="PW"/><input type="password" id="pass" name="pass" class="guideText" value="비밀번호"/></li>
-											</ul>
+										<ul class="input">
+											<li class="login loginicon">
+												<img src="images/user.png" alt="ID"/>
+												<input type="text" name="id" class="guideText" value="아이디" >
+											</li>
+											<li class="password loginicon"><img src="images/lock.png" alt="PW"/><input type="password" id="pass" name="pass" class="guideText" value="비밀번호"/></li>
+										</ul>
 										</form>
 									</div>	
 									<div class="login_check">
@@ -25,10 +28,44 @@
 										<label for="secure">&nbsp;보안접속</label>
 									</div>
 									<div class="button">
-										<button type="button">LOGIN</button>
+										<span><p onclick="check_input()">로그인</p></span>
 									</div>
-									
 								</div>
+								
+<?php 
+	} else {
+		
+?>
+							<div class="login_box">
+								<div class="login_img">
+									<img src="images/member.png" alt="로그인을 해주세요"/>
+								</div>
+								<p class="member">
+									<span><?=$username?>(<?=$userid?>)님</span>
+									<br/>
+									<span>[레벨<?=$userlevel?>  (<?=$userpoint?>점) ]</span>
+								</p>
+								<div class="member_info cf">
+									<ul>
+										<li class="member_sub mg"><a href="../message/message_form.php">쪽지함</a></li>
+										<li class="member_sub bd"><a href="../board/board_form.php">게시판</a></li>
+									</ul>
+								</div>
+								<div class="button_lg">
+									<span><a href="../login/logout.php">로그아웃</a></span>
+									<span><a href="../login/mamber_modify_form.php">정보수정</a></span> 
+<?php 
+	if($userlevel==1){
+?>
+									<span><a href="../admin/admin.php">관리자 메뉴</a></span> 
+<?php 
+	} 
+?>									
+								</div>
+							</div>
+<?php 
+	} 
+?>							
 								<div class="search_icon">
 									<ul class="s_icon1">
 										<li><a href="#">신간 도서</a></li>

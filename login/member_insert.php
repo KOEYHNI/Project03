@@ -15,17 +15,32 @@
   $con = mysqli_connect(DBhost, DBuser, DBpass, DBname); // 02/21개 수정
   
   $sql = "insert into members(id, pass, name, email, regist_day, level, point) "; 
+  $checkid = "select * from members where id='$id'";
+  $result =  mysqli_query($con, $checkid);
+  $num_record = mysqli_num_rows($result);
   $sql .= "values('$id', '$pass', '$name', '$email', '$regist_day', 9, 0)";
   
-  mysqli_query($con, $sql);  // $sql 에 저장된 명령 실행 
-  mysqli_close($con);
+  if($num_record)
+       {
+         echo("
+                 <script>
+                   window.alert('아이디가 중복되었습니다! 다른 아이디를 사용해주세요.')
+                   history.go(-1)
+                 </script>
+              ");
+       }
+       else
+       {
+             mysqli_query($con, $sql);
+       } 
+       mysqli_close($con);  
   
   echo " 
       <script>   
-         
+          location.href = '../main/index.php';
           //location.href = '../index2.php';
           //아직 코딩되지 않은 부분이라서 나중에 수정
           //location.href = 'login_form.php'; 
       </script> 
   "; 
-?>  
+?>      

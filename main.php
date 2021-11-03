@@ -25,7 +25,7 @@
 										<label for="secure">&nbsp;보안접속</label>
 									</div>
 									<div class="button">
-										<button type="button">LOGIN</button>
+										<span><p onclick="check_input()">로그인</p></span>
 									</div>
 									
 								</div>

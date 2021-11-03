@@ -27,6 +27,6 @@ function getCookie( name )
   
 if ( getCookie( "Notice" ) != "done" ) 
 { 
-  noticeWindow  = window.open("popup.html", "", "resizable=no, toolbar=no, width=577, height=826"); 
+  noticeWindow  = window.open("popup.php", "", "resizable=no, toolbar=no, width=577, height=826"); 
   noticeWindow.opener = self; 
 }
