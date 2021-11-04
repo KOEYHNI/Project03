@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/join.css"/>
 	<script src="../main/js/jquery-1.9.0.min.js"></script>
 	<script src="js/login2.js"></script>
+	<script src="js//member_modify.js"></script>
 	<script src="../main/js/html5div.js"></script>
 	<script src="../main/js/html5shiv.js"></script>
 	<script src="../main/js/common.js"></script>
@@ -16,101 +17,50 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
-	<script> 
-	function check_input() 
-	{
-	    if (!document.member_form.id.value.trim()) { 
-	        alert("아이디를 입력하세요!");  
-	        document.member_form.id.focus(); 
-	        return; 
-	    }
-	    if (!document.member_form.pass.value.trim()) { 
-	        alert("비밀번호를 입력하세요!");  
-	        document.member_form.pass.focus(); 
-	        return; 
-	    }
-	    if (!document.member_form.pass_confirm.value.trim()) { 
-	        alert("비밀번호확인을 입력하세요!");  
-	        document.member_form.pass_confirm.focus(); 
-	        return; 
-	    }
-	
-	    if (!document.member_form.name.value.trim()) { 
-	        alert("이름을 입력하세요!");  
-	        document.member_form.name.focus(); 
-	        return; 
-	    }
-	    if (!document.member_form.email1.value.trim()) { 
-	        alert("이메일 주소를 입력하세요!");  
-	        document.member_form.email1.focus(); 
-	        return; 
-	    }
-	
-	    if (!document.member_form.email2.value.trim()) { 
-	        alert("이메일 주소를 입력하세요!");  
-	        document.member_form.email2.focus(); 
-	        return; 
-	    }
-	
-	    if (document.member_form.pass.value.trim() != document.member_form.pass_confirm.value.trim()) 
-	    { 
-	        alert("비밀번호가 일치하지 않습니다.\n다시 입력해 주세요!"); 
-	        document.member_form.pass.focus(); 
-	        // select()를 사용하여 블럭지정
-	        document.member_form.pass.select(); 
-	        return; 
-	    }
-	
-	    document.member_form.submit(); 
-	}
-
-	function reset_form() {
-	    document.member_form.id.value = "";  
-	    document.member_form.pass.value = ""; 
-	    document.member_form.pass_confirm.value = ""; 
-	    document.member_form.name.value = ""; 
-	    document.member_form.email1.value = ""; 
-	    document.member_form.email2.value = ""; 
-	    document.member_form.id.focus(); 
-	    return; 
-	}  
-
-	function check_id() {
-	    window.open("member_check_id.php?id=" + document.member_form.id.value, 
-	        "IDcheck", 
-	        "left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes"); 
-	}
-	</script> 
 </head>
 <body>
 	<div id="wrap">
 		<header>
 			<?php include "../main/header.php";?>
 		</header>
-
 <?php
-  if ($userid )
-  {
-    echo("<script>
-        alert('로그아웃 후 이용해주세요!');
-         history.go(-1)
-        </script>
-      ");
-    exit;
-  }
-?>  
+	$con = mysqli_connect(DBhost, DBuser, DBpass, DBname);
+	$sql    = "select * from members where id='$userid'";
+	$result = mysqli_query($con, $sql);
+	$row    = mysqli_fetch_array($result);
+
+	$pass = $row["pass"];
+	$name = $row["name"];
+
+	$email = explode("@", $row["email"]);
+	$email1 = $email[0];
+	$email2 = $email[1];
+
+	mysqli_close($con);
+?>
+<?php
+	if (!$userid )
+	{
+		echo("<script>
+				alert('로그인 후 이용해주세요!');
+				location.href = '../login/login_form.php';
+				</script>
+			");
+		exit;
+	}
+?>		
 		<section>
 			<div id="menu_header">
 				<div class="location">
 					<ul>
 						<li class="first"><a href="../main/index.php">HOME</a></li>
 						<li><a href="#">&nbsp;>&nbsp;나의 서재</a></li>
-						<li><a href="member_form.php">&nbsp;>&nbsp;회원가입</a></li>
+						<li><a href="member_modify_form.php">&nbsp;>&nbsp;정보수정</a></li>
 					</ul>
 				</div>
 				<div class="menu_title">	
 					<h2>
-						<strong>회원가입</strong>
+						<strong>정보수정</strong>
 					</h2>
 				</div>
 			</div>
@@ -137,7 +87,7 @@
 				</div>
 				<div id="sub_right">
 					
-					<div class="mlib_title">회원가입</div>
+					<div class="mlib_title">정보수정</div>
 					<div class="login_box">
 						<form name="member_form" method="post" action="member_insert.php">
 						<div class="join_form">
@@ -145,38 +95,64 @@
 								<div class="col1">아이디</div> 
 								<div class="col2 login"> 
 									<img src="../main/images/user.png" alt="ID"/>
-									<input type="text" name="id" class="guideText" placeholder="아이디" >
-								</div>  
-								<div class="col3"> 
-									<p onclick="check_id()">중복확인</p> 
-								</div>  
+									<span><?=$userid?></span>
+								</div> 
 							</div> 
 							<div class="clear"></div>
-									
-							<div class="form pass"> 
-								<div class="col1">비밀번호</div> 
-								<div class="col2"> 
-									<img src="../main/images/lock.png" alt="PW"/>
-									<input type="password" id="pass" name="pass" class="guideText" placeholder="비밀번호"/>
+<?php
+if ($userid == "admin") {
+					echo "<script>alert(\"admin에서는 비밀번호를 수정할 수 없습니다!\");</script>";
+				    echo "
+											
+							<div class='form pass'> 
+								<div class='col1'>비밀번호</div> 
+								<div class='col2'> 
+									<img src='../main/images/lock.png' alt='PW'/>
+									<input type='password' id='pass' name='pass' class='guideText'  value='$pass' readonly />
 								</div>  
 							</div> 
-							<div class="clear"></div> 
+							<div class='clear'></div> 
 									
-							<div class="form pass"> 
-								<div class="col1">비밀번호 확인</div> 
-								<div class="col2"> 
-									<img src="../main/images/lock.png" alt="PW"/>
-									<input type="password"  name="pass_confirm" class="guideText" placeholder="비밀번호"/>
+							<div class='form pass'> 
+								<div class='col1'>비밀번호 확인</div> 
+								<div class='col2'> 
+									<img src='../main/images/lock.png'alt='PW'/>
+									<input type='password'  name='pass_confirm' class='guideText' value='$pass' readonly />
 								</div>  
 							</div> 
-							<div class="clear"></div> 
+							<div class='clear'></div> 
+
+					";
+}else{
+				    echo "
+											
+							<div class='form pass'> 
+								<div class='col1'>비밀번호</div> 
+								<div class='col2'> 
+									<img src='../main/images/lock.png' alt='PW'/>
+									<input type='password' id='pass' name='pass' class='guideText'  value='$pass' readonly />
+								</div>  
+							</div> 
+							<div class='clear'></div> 
 									
+							<div class='form pass'> 
+								<div class='col1'>비밀번호 확인</div> 
+								<div class='col2'> 
+									<img src='../main/images/lock.png'alt='PW'/>
+									<input type='password'  name='pass_confirm' class='guideText' value='$pass' readonly />
+								</div>  
+							</div> 
+							<div class='clear'></div> 
+
+					";
+}
+?>									
 							<div class="form name"> 
 								<div class="col1">이름</div> 
 								<div class="col2"> 
 									
 									<img src="../main/images/user.png" alt="ID"/>
-									<input type="text" name="name" class="guideText" placeholder="이름" >									
+									<input type="text" name="name" class="guideText" value="<?=$name?>" >									
 								</div>  
 							</div> 
 							<div class="clear"></div> 
@@ -186,11 +162,11 @@
 								<div class="col2"> 
 									<div class="em1">
 										<img src="../main/images/mail.png" alt="mail"/>
-										<input type="text" name="email1"class="guideText" placeholder="아이디">
+										<input type="text" name="email1"class="guideText" value="<?=$email1?>">
 									</div>
 									<span>@</span>
 									<div class="mail2">
-										<input type="text" name="email2" class="guideText em2" placeholder="naver.com">
+										<input type="text" name="email2" class="guideText em2" value="<?=$email2?>">
 									</div> 
 								</div>  
 							</div> 
@@ -204,8 +180,8 @@
 								
 								<p onclick="reset_form()">취소</p>									
 							</div>
-						</div> 
-					</form>
+						</div>
+					</form> 
 					</div>
 				</div>
 			</div>

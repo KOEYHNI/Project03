@@ -24,7 +24,7 @@
 				</div>
 
 				<div class="counter_logout">
-					<span id="counter"></span> <span>후 자동로그아웃</span> <input type="button" value="연장" onclick="counter_reset()"/>
+					<span id="counter"></span> <span>후 로그인 페이지로</span> <input type="button" value="연장" onclick="counter_reset()"/>
 				</div>
 					<ul class="gnb_menu">
 						<li class="show_balloon" title="홈 화면으로 이동합니다."><a href="index.php">홈</a></li>
@@ -38,7 +38,7 @@
 		$logged = $username."(".$userid.")님[level: ".$userlevel.",point: ".$userpoint."]";
 ?>	
 						<li class="show_balloon" title="로그아웃 화면으로 이동합니다."><a href="./login/logout.php">로그아웃</a></li>
-						<li class="show_balloon" title="정보수정 화면으로 이동합니다."><a href="./login/mamber_modify_form.php">정보수정</a></li>											
+						<li class="show_balloon" title="정보수정 화면으로 이동합니다."><a href="./login/member_modify_form.php">정보수정</a></li>											
 <?php 
 	} 
 ?>				

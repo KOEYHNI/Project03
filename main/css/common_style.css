@@ -16,7 +16,8 @@ h1{display:none;}
 #logo{margin-left: 2px;width:250px; height:70px; background:#ffffff; float:left; }
 #main_top ul.gnb_menu{float:right;}
 #main_top ul.gnb_menu li{float:left;}
-#main_top ul.gnb_menu li a {font-family: NanumGothicBold,NanumGothic,"Helvetica Neue",Helvetica,Arial,sans-serif;display:block;  line-height:40px; color:#333333; font-weight:bold; padding: 0 .5em; font-size: 1em;  margin-top: 25px;}
+#main_top ul.gnb_menu li a {font-family: NanumGothicBold,NanumGothic,"Helvetica Neue",Helvetica,Arial,sans-serif;display:block;  line-height:40px; color:#333333; font-weight:bold; padding: 0 .5em; font-size: 1em;  margin-top: 8px;}
+.member_if{height:21px; text-align: right; color: #333333;}
 #main_top ul.gnb_menu li a:hover{color:#0c78c5; transition:0.5s; text-decoration: underline;}
 
 #main_top ul.gnb_menu li span{display:block; padding:0 6px; line-height:50px; color:#ffffff; font-weight:bold; letter-spacing:0.15em;}

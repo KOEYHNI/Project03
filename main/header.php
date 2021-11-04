@@ -21,6 +21,18 @@
 					<h1><span>군포시도서관</span></h1>
 					<a class="show_balloon" title="홈 화면으로 이동합니다." href="../main/index.php" tabindex="1"><img src="../main/images/library_logo.png" alt="도서관로고"/></a>
 				</div>
+<?php 
+	if(!$userid){
+?>				
+					<p class="member_if"></p>
+<?php 
+	} else {
+		$logged = $username." (".$userid.") 님[level: ".$userlevel.",point: ".$userpoint."]";
+?>	
+					<p class="member_if"><?=$logged?></p>	
+<?php 
+	} 
+?>					
 					<ul class="gnb_menu">
 						<li class="show_balloon" title="홈 화면으로 이동합니다."><a href="../main/index.php">홈</a></li>
 <?php 
@@ -34,7 +46,7 @@
 ?>	
 						
 						<li class="show_balloon" title="로그아웃 화면으로 이동합니다."><a href="../login/logout.php">로그아웃</a></li>
-						<li class="show_balloon" title="마이페이지 화면으로 이동합니다."><a href="../login/mamber_modify_form.php">마이페이지</a></li>											
+						<li class="show_balloon" title="마이페이지 화면으로 이동합니다."><a href="../login/member_modify_form.php">마이페이지</a></li>											
 <?php 
 	} 
 ?>				

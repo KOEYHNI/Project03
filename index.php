@@ -64,10 +64,20 @@
 						nMin = nMin%60;
 					}
 				} 
-				if(nSec<10) nSec = "0"+nSec;
-				if(nMin<10) nMin = "0"+nMin;
-
-				return ""+nHour+":"+nMin+":"+nSec;
+				nHour1 = nHour+"시간 ";
+				nMin1 = nMin+"분 ";
+				nSec1 = nSec+"초";
+				if(nSec1=="0초"){ 
+					nSec1 = " ";
+				};
+				if(nMin1=="0분 "){ 
+					nMin1 = " ";
+				};				
+				if(nHour1=="0시간 "){ 
+					nHour1 = " ";
+				};
+				console.log(nHour1)
+				return nHour1 + nMin1 + nSec1
 			};
 			counter_init();
 		

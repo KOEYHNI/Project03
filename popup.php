@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>추천도서</title>
-	<link rel="stylesheet" href="include/css/popup.css"/>
+	<link rel="stylesheet" href="main/css/popup.css"/>
 	<script>
 		function setCookie( name, value, expiredays ) 
 		{ 

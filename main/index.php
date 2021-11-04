@@ -27,7 +27,6 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 	<script>
-		
 
 			var tid;
 			var cnt = parseInt(5);//초기값(초단위)
@@ -49,7 +48,7 @@
 				cnt--;
 				if(cnt < 0) {
 					clearInterval(tid);
-					//self.location = "sub6/login_form.php";
+					//self.location = "login/login_form.php";
 				}
 			};
 			function time_format(s) {
@@ -65,10 +64,20 @@
 						nMin = nMin%60;
 					}
 				} 
-				if(nSec<10) nSec = "0"+nSec;
-				if(nMin<10) nMin = "0"+nMin;
-
-				return ""+nHour+":"+nMin+":"+nSec;
+				nHour1 = nHour+"시간 ";
+				nMin1 = nMin+"분 ";
+				nSec1 = nSec+"초";
+				if(nSec1=="0초"){ 
+					nSec1 = " ";
+				};
+				if(nMin1=="0분 "){ 
+					nMin1 = " ";
+				};				
+				if(nHour1=="0시간 "){ 
+					nHour1 = " ";
+				};
+				console.log(nHour1)
+				return nHour1 + nMin1 + nSec1
 			};
 			counter_init();
 		
