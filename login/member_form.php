@@ -60,7 +60,8 @@
 	        document.member_form.pass.select(); 
 	        return; 
 	    }
-	
+		
+			document.getElementById("em2").readOnly = false;
 	    document.member_form.submit(); 
 	}
 
@@ -79,6 +80,20 @@
 	    window.open("member_check_id.php?id=" + document.member_form.id.value, 
 	        "IDcheck", 
 	        "left=700,top=300,width=350,height=200,scrollbars=no,resizable=yes"); 
+	}
+	function InsertTitle(str) {
+		if (str != "") {
+			document.getElementById("em2").value = str;
+			document.getElementById("em2").readOnly = true;
+			document.getElementById("em2").style.background = "#e9e9e9";
+			document.getElementById("em2").placeholder = "도메인(선택)";
+		} else {
+			document.getElementById("em2").value = "";
+			document.getElementById("em2").readOnly = false;
+			document.getElementById("em2").placeholder = "";
+			document.getElementById("em2").style.background = "#FFFFFF";
+			document.getElementById("em2").focus();
+		}
 	}
 	</script> 
 </head>
@@ -166,7 +181,7 @@
 								<div class="col1">비밀번호 확인</div> 
 								<div class="col2"> 
 									<img src="../main/images/lock.png" alt="PW"/>
-									<input type="password"  name="pass_confirm" class="guideText" placeholder="비밀번호"/>
+									<input type="password"  name="pass_confirm" class="guideText" placeholder="비밀번호 확인"/>
 								</div>  
 							</div> 
 							<div class="clear"></div> 
@@ -190,7 +205,8 @@
 									</div>
 									<span>@</span>
 									<div class="mail2">
-										<input type="text" name="email2" class="guideText em2" placeholder="naver.com">
+										<input type="text" name="email2" id="em2" placeholder="도메인(선택)"  readonly />
+										<select name="email22" onchange="InsertTitle(this.value)" class="guideText em22" ><option value="" disabled selected hidden>선택</option><option value="naver.com">naver.com</option><option value="nate.com">nate.com</option><option value="daum.net">daum.net</option><option value="gmail.com">gmail.com</option><option value="">직접입력</option></select>
 									</div> 
 								</div>  
 							</div> 

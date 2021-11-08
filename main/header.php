@@ -24,12 +24,18 @@
 <?php 
 	if(!$userid){
 ?>				
-					<p class="member_if"></p>
+					<div class="member_if">
+						
+					
+					</div>
 <?php 
 	} else {
 		$logged = $username." (".$userid.") 님[level: ".$userlevel.",point: ".$userpoint."]";
 ?>	
-					<p class="member_if"><?=$logged?></p>	
+					<div class="member_if">
+						<span id="counter"></span><span>후 자동 로그아웃</span> <input type="button" value="연장" onclick="counter_reset()"/>
+						<?=$logged?>
+					</div>	
 <?php 
 	} 
 ?>					
@@ -44,7 +50,6 @@
 	} else {
 		$logged = $username."(".$userid.")님[level: ".$userlevel.",point: ".$userpoint."]";
 ?>	
-						
 						<li class="show_balloon" title="로그아웃 화면으로 이동합니다."><a href="../login/logout.php">로그아웃</a></li>
 						<li class="show_balloon" title="마이페이지 화면으로 이동합니다."><a href="../login/member_modify_form.php">마이페이지</a></li>											
 <?php 
@@ -57,12 +62,12 @@
 <?php 
 	} 
 ?>
-						<li class="show_balloon" title="군포시립도서관 사이트맵으로 이동합니다."><a href="../#">사이트맵</a></li>
-						<li class="show_balloon" title="영문페이지로 이동합니다."><a href="../#">ENG</a></li>
-						<li class="social show_balloon" title="트위터로 이동"><a href="../#"><img src="../main/images/top_sns_twitter.png" alt="트위터"/></a></li>
-						<li class="social show_balloon" title="인스타그램으로 이동"><a href="../#"><img src="../main/images/top_sns_insta.png" alt="인스타그램"/></a></li>
-						<li class="social show_balloon" title="페이스북으로 이동"><a href="../#"><img src="../main/images/top_sns_facebook.png" alt="페이스북"/></a></li>
-						<li class="social show_balloon" title="유튜브로 이동"><a href="../#"><img src="../main/images/top_sns_youtube.png" alt="유튜브"/></a></li>
+						<li class="show_balloon" title="군포시립도서관 사이트맵으로 이동합니다."><a href="#">사이트맵</a></li>
+						<li class="show_balloon" title="영문페이지로 이동합니다."><a href="#">ENG</a></li>
+						<li class="social show_balloon" title="트위터로 이동"><a href="#"><img src="../main/images/top_sns_twitter.png" alt="트위터"/></a></li>
+						<li class="social show_balloon" title="인스타그램으로 이동"><a href="#"><img src="../main/images/top_sns_insta.png" alt="인스타그램"/></a></li>
+						<li class="social show_balloon" title="페이스북으로 이동"><a href="#"><img src="../main/images/top_sns_facebook.png" alt="페이스북"/></a></li>
+						<li class="social show_balloon" title="유튜브로 이동"><a href="#"><img src="../main/images/top_sns_youtube.png" alt="유튜브"/></a></li>
 					</ul>
 			</div>
 			<div id="header_lnb">
@@ -905,7 +910,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="all_menu show_balloon" title="전체메뉴"><a href="../#"><img src="../main/images/all_menu_size.png" alt="전체메뉴"/></a></li>
+						<li class="all_menu show_balloon" title="전체메뉴"><a href="#"><img src="../main/images/all_menu_size.png" alt="전체메뉴"/></a></li>
 					</ul>
 				</div>
 			</div><!-- id="main_top" -->				

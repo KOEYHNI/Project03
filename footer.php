@@ -94,15 +94,15 @@
 	<div class="quickmenu">
 		<a href class="quickhead">QUICK MENU</a>
 		<ul class="quick_list">
-			<li class="quick"><a href="sub9/sub9.html">로그인</a></li>
-			<li class="quick"><a href="sub6/sub6.html">추천도서</a></li>
-			<li class="quick"><a href="sub7/sub7.html">오디오북</a></li>
-			<li class="quick"><a href="sub1/sub1.html">작은도서관</a></li>
-			<li class="quick"><a href="sub8/sub8.html">열람실좌석현황</a></li>
-			<li class="quick"><a href="sub4/sub4.html">도서관 휴관일</a></li>
-			<li class="quick"><a href="sub5/sub5.html">한줄감상</a></li>
-			<li class="quick"><a href="sub2/sub2.html">자주하는질문</a></li>
-			<li class="quick"><a href="sub3/sub3.html">인사말</a></li>
+			<li class="quick"><a href="sub9/sub9.php">로그인</a></li>
+			<li class="quick"><a href="sub6/sub6.php">추천도서</a></li>
+			<li class="quick"><a href="sub7/sub7.php">오디오북</a></li>
+			<li class="quick"><a href="sub1/sub1.php">작은도서관</a></li>
+			<li class="quick"><a href="sub8/sub8.php">열람실좌석현황</a></li>
+			<li class="quick"><a href="sub4/sub4.php">도서관 휴관일</a></li>
+			<li class="quick"><a href="sub5/sub5.php">한줄감상</a></li>
+			<li class="quick"><a href="sub2/sub2.php">자주하는질문</a></li>
+			<li class="quick"><a href="sub3/sub3.php">인사말</a></li>
 			<li class="top"><a href="#wrap">TOP</a></li>
 		</ul>
 	</div>

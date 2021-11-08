@@ -29,7 +29,7 @@
 		
 
 			var tid;
-			var cnt = parseInt(5);//초기값(초단위)
+			var cnt = parseInt(6000);//초기값(초단위)
 			
 			function counter_init() {
 				tid = setInterval(function(){
@@ -39,7 +39,7 @@
 
 			function counter_reset(){
 				clearInterval(tid);
-				cnt = parseInt(60);
+				cnt = parseInt(6000);
 				counter_init();
 			};
 

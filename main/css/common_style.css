@@ -17,7 +17,6 @@ h1{display:none;}
 #main_top ul.gnb_menu{float:right;}
 #main_top ul.gnb_menu li{float:left;}
 #main_top ul.gnb_menu li a {font-family: NanumGothicBold,NanumGothic,"Helvetica Neue",Helvetica,Arial,sans-serif;display:block;  line-height:40px; color:#333333; font-weight:bold; padding: 0 .5em; font-size: 1em;  margin-top: 8px;}
-.member_if{height:21px; text-align: right; color: #333333;}
 #main_top ul.gnb_menu li a:hover{color:#0c78c5; transition:0.5s; text-decoration: underline;}
 
 #main_top ul.gnb_menu li span{display:block; padding:0 6px; line-height:50px; color:#ffffff; font-weight:bold; letter-spacing:0.15em;}
@@ -28,6 +27,12 @@ h1{display:none;}
 #main_top ul.libray_menu li{float:left;}
 #main_top ul.libray_menu li a img{box-sizing:border-box; height:40px; position:absolute; top:5px; left:5px;}
 
+.member_if{height:21px; text-align: right; color: #333333;margin-right: 15px; font-weight: bold;}
+.member_if span{height:21px;margin-right:5px;font-weight: normal;}
+.member_if >input{background: #52c3f1; font-weight: bold; color:#ffffff; border: 0;border-radius: 5px; padding: 3px 10px; font-weight: bold; margin-right: 5px;margin-top: 5px;}
+.member_if >input:hover{background: #1196cc;}
+#counter{ font-size: 15px;padding-left:30px;background: url(../images/book_icon.png) left -2px no-repeat; height:21px;background-size:25px; margin-right: 5px;font-weight: bold;}
+#counter1{ font-size: 15px;padding-left:30px;background: url(../images/book_icon.png) left -2px no-repeat; height:21px;background-size:25px; margin-right: 5px;font-weight: bold;}
 /* 상단 메뉴바 */
 #header_lnb{border-bottom: 1px solid #4f5157;border-top: 1px solid #0d55a2;}
 #main_menu{width:1420px; height:70px;background:#ffffff;  margin: 0 auto; }

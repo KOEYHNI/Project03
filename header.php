@@ -23,9 +23,22 @@
 					<a class="show_balloon" title="홈 화면으로 이동합니다." href="index.php" tabindex="1"><img src="./main/images/library_logo.png" alt="도서관로고"/></a>
 				</div>
 
-				<div class="counter_logout">
-					<span id="counter"></span> <span>후 로그인 페이지로</span> <input type="button" value="연장" onclick="counter_reset()"/>
-				</div>
+<?php 
+	if(!$userid){
+?>				
+					<div class="member_if">
+						<span id="counter"></span><span>후 로그인 페이지로 이동합니다.</span> <input type="button" value="연장" onclick="counter_reset()"/>
+					</div>
+<?php 
+	} else {
+		$logged = $username."(".$userid.")님[level: ".$userlevel.",point: ".$userpoint."]";
+?>					
+					<div class="member_if">
+						<span id="counter1"></span><span>후 자동 로그아웃</span> <input type="button" value="연장" onclick="counter_reset1()"/><?=$logged?>
+					</div>
+<?php 
+	} 
+?>					
 					<ul class="gnb_menu">
 						<li class="show_balloon" title="홈 화면으로 이동합니다."><a href="index.php">홈</a></li>
 <?php 

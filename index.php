@@ -81,6 +81,57 @@
 			};
 			counter_init();
 		
+			var tid1;
+			var cnt1 = parseInt(30);//초기값(초단위)
+			
+			function counter_init1() {
+				tid1 = setInterval(function(){
+					counter_run1();
+				}, 1000);
+			};
+
+			function counter_reset1(){
+				clearInterval(tid1);
+				cnt1 = parseInt(30);
+				counter_init1();
+			};
+
+			function counter_run1(){
+				document.getElementById("counter1").innerText = time_format(cnt);
+				cnt--;
+				if(cnt < 0) {
+					clearInterval(tid1);
+					self.location = "./login/logout.php";
+				}
+			};
+			function time_format1(s) {
+				var nHour=0;
+				var nMin=0;
+				var nSec=0;
+				if(s>0) {
+					nMin = parseInt(s/60);
+					nSec = s%60;
+
+					if(nMin>60) {
+						nHour = parseInt(nMin/60);
+						nMin = nMin%60;
+					}
+				} 
+				nHour1 = nHour+"시간 ";
+				nMin1 = nMin+"분 ";
+				nSec1 = nSec+"초";
+				if(nSec1=="0초"){ 
+					nSec1 = " ";
+				};
+				if(nMin1=="0분 "){ 
+					nMin1 = " ";
+				};				
+				if(nHour1=="0시간 "){ 
+					nHour1 = " ";
+				};
+				return nHour1 + nMin1 + nSec1
+			};
+			counter_init1();		
 	</script>
 </head>
 <body>
