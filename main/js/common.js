@@ -154,5 +154,13 @@
 		$('.control_panel').css('top','487px');
 		$('.sub_menu').css('top','142px');
 	});
+
+   
+	setInterval(swing,1000);
+	function swing(){
+		$('.msms').animate({'top': '10px'},1000).animate({'top': '0px'},1000)
+		$('.bdbd').animate({'top': '10px'},1000).animate({'top': '0px'},1000);
+	};
+
 	
 });

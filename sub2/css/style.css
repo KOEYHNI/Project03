@@ -20,7 +20,7 @@ img{border: 0; }
 /* 콘텐츠헤더 */
 
  .menu_title{width: 600px;}
-.location{float:right; margin-top:120px; margin-right: 50px;   width: 700px; height: 60px; }
+.location{float: right; margin-top: 120px; width: 300px; margin-right: -690px; height: 60px;  position: relative;right: 50% ;}
 .location ul{width: 275px; margin: 0 auto}
 .location li{float:left; }
 .location a{display: block; float:left;  margin-top: 35px; color:#333333; font-weight: bold;}

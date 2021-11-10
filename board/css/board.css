@@ -111,12 +111,12 @@ img{border: 0; }
 .board_imgbox> img{ max-width: 770px;margin: 0 auto; margin-bottom: 50px;}
 .mg5{margin-left:-5px;}
 
-#board_box2 {clear: both;margin-left:40px; width:1130px;}
+#board_box2 {clear: both;margin-left:20px; width:1130px;}
 #board_box2 .buttons { text-align: right; margin: 20px 0 40px 0; }
 #board_box2 .buttons li { display: inline; }
 #board_box2 .buttons button {  cursor: pointer;padding: 5px 23px;background: #006cb8;color: #ffffff; border-radius: 8px; font-size: 18px; }
 #board_box2 .buttons button:hover{background: #004e85;}
-.search_box{float:right; margin-top: 60px;width: 460px; margin-bottom: 20px;}
+.search_box{float:right; margin-top: 60px;width: 460px; margin-bottom: 10px;}
 .searcharea{display: block; background-color: #f1f1f1;color: #4e5056;border-radius: 10px;border: 0; height: 40px; width: 460px; font-size: 17px;}
 .searcharea select{    font-size: 17px; margin-left: 20px;height: 40px;vertical-align: middle; border: 1px solid #f1f1f1; padding-bottom: 2px; margin-right: 20px;border: none;background: transparent;color: #4e5056;}
 .searcharea input{ 

@@ -35,6 +35,8 @@
 <section>
 	<section>
 			<div id="menu_header">
+				<a href="../message/message_form.php" class="msms show_balloon" title="쪽지 보내기""></a>
+				<a href="../board/board_list.php" class="bdbd show_balloon" title="게시판"></a>
 				<div class="location">
 					<ul>
 						<li class="first"><a href="../main/index.php">HOME</a></li>

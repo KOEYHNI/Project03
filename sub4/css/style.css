@@ -17,7 +17,7 @@ section{height: 1140px; /* background:#999999; */ }
 /* 콘텐츠헤더 */
  #contents_header{ height:190px;  margin: 0 auto;}
 .contents_title{margin: 0 auto;width: 700px; height: 130px;}
-.location{float:right; margin-top:120px; margin-right: 50px;   width: 700px; height: 60px; }
+.location{float: right; margin-top: 120px; width: 300px; margin-right: -690px; height: 60px;  position: relative;right: 50% ;}
 .location ul{width: 280px; margin: 0 auto}
 .location li{float:left; }
 .location a{display: block; float:left;  margin-top: 35px; color:#333333; font-weight: bold;}

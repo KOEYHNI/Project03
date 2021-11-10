@@ -436,8 +436,10 @@ background: linear-gradient(to top, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Fir
 			.member_info ul li{float: left;}
 			.member_info ul .member_sub a{display: block;height:35px; line-height: 35px;font-size: 16px;  color: #333333; width: 50px; text-align: center; margin-right:8px; padding: 0px 10px; margin-top: 10px; border-radius: 8px; padding-left: 40px;}
 			.member_info ul .info a{display: block;height:35px; line-height: 35px;font-size: 18px; color: #ffffff; font-weight: bold;width: 160px; text-align: center; margin-right: 5px; padding: 0px 10px; margin-top: 3px; border-radius: 8px;}
-			.mg> a{background: #ffffff url(../images/mg.png) no-repeat 5px center; background-size: 30px 30px;}
-			.bd> a{background: #ffffff url(../images/bd.png) no-repeat 5px 1px; background-size: 30px 30px;}
+			.mg> a{background: #ffffff  url(../images/msms.png)  no-repeat 5px center; background-size: 30px 30px;}
+			.mg> a:hover{background: #ffffff  url(../images/msms2.png)  no-repeat 5px center; background-size: 30px 30px;}
+			.bd> a{background: #ffffff  url(../images/bdbd.png)  no-repeat 5px center; background-size: 30px 30px;}
+			.bd> a:hover{background: #ffffff  url(../images/bdbd2.png)  no-repeat 5px center; background-size: 30px 30px;}
 	.guide{color: #cccccc;}
 
 

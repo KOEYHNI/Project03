@@ -145,7 +145,11 @@ box-shadow: 0 2px 4px rgb(0 0 0 / 15%);}
 .event{width: 1420px; margin: 0 auto; height: 40px; background: url(../images/top_event.png) no-repeat center center; position: relative;}
 .event>.t_close_btn{float: right; width: 28px; height: 28px;margin-top: 6px; margin-right: 5px; background: #009cb4 url(../images/closed.png) center center no-repeat; background-size: 10px 10px; border-radius:50px;}
 .event>.t_close_btn:hover{background-color: #00444e;}
+.msms{margin-top: 20px;display: block; position:relative; left: 50%;  margin-left: 550px;width: 50px; height: 50px;  float:left;background: url(../images/msms.png) center no-repeat; background-size: 50px;}
+.msms:hover{background: url(../images/msms2.png) center no-repeat;background-size: 50px;}
+.bdbd{margin-top: 20px;display: block;float:left;position:relative;left: 50%;  margin-left:20px;  width: 50px;  height: 50px; background:url(../images/bdbd.png) center no-repeat; background-size: 50px;}
 
+.bdbd:hover{background: url(../images/bdbd2.png) center no-repeat;background-size: 50px;}
 
 
 

@@ -119,6 +119,8 @@
 		<section>
 			<div id="menu_header">
 				<div class="location">
+					<a href="../message/message_form.php" class="msms show_balloon" title="쪽지 보내기""></a>
+					<a href="../board/board_list.php" class="bdbd show_balloon" title="게시판"></a>
 					<ul>
 						<li class="first"><a href="../main/index.php">HOME</a></li>
 						<li><a href="#">&nbsp;>&nbsp;나의 서재</a></li>
