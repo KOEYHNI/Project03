@@ -49,7 +49,7 @@
             echo("
               <script>
                 // location.href = 'index2.php';
-                location.href = '../main/index.php';
+                location.href = '../board/board_list.php';
               </script>
             ");
         }

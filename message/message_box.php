@@ -9,6 +9,7 @@
 	<script src="../main/js/html5div.js"></script>
 	<script src="../main/js/html5shiv.js"></script>
 	<script src="../main/js/common.js"></script>
+	<script src="../main/js/login_count.js"></script>
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
@@ -53,7 +54,9 @@
 						<div class="side_menu">
 							<a href="#" class="s_header">나의 서재</a>
 							<ul class="s_menu_list">
-								<li><a href="../login/member_form.php">회원가입</a></li>
+								<li ><a href="../board/board_list.php">게시판</a></li>
+								<li><a href="message_form.php">쪽지함</a></li>
+								<li><a href="../login/member_modify_form.php">정보수정</a></li>
 								<li><a href="#">개인공지사항</a></li>
 								<li><a href="#">대출/연장/예약조회</a></li>
 								<li><a href="#">상호대차신청조회</a></li>
@@ -176,7 +179,7 @@
 			}
 			else
 			{
-				echo"<li><a href='messagx_box.php?mode=$mode$page=$i'> $i </a></li>";
+				echo "<li> <a href='message_box.php?mode=$mode&page=$i'> $i </a> <li>";
 			}
 	}
    	

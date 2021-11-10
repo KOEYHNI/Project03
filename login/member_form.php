@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -10,6 +11,7 @@
 	<script src="../main/js/html5div.js"></script>
 	<script src="../main/js/html5shiv.js"></script>
 	<script src="../main/js/common.js"></script>
+	<script src="../main/js/login_count.js"></script>
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
@@ -52,13 +54,12 @@
 	        return; 
 	    }
 	
-	    if (document.member_form.pass.value.trim() != document.member_form.pass_confirm.value.trim()) 
-	    { 
-	        alert("비밀번호가 일치하지 않습니다.\n다시 입력해 주세요!"); 
-	        document.member_form.pass.focus(); 
-	        // select()를 사용하여 블럭지정
-	        document.member_form.pass.select(); 
-	        return; 
+	   if(document.getElementById("pInput").value == "no"){
+        alert("중복확인 버튼을 눌러 아이디 중복을 확인해주세요!"); 
+        document.member_form.id.focus(); 
+        // select()를 사용하여 블럭지정
+        document.member_form.id.select(); 
+        return;
 	    }
 		
 			document.getElementById("em2").readOnly = false;
@@ -98,6 +99,7 @@
 	</script> 
 </head>
 <body>
+
 	<div id="wrap">
 		<header>
 			<?php include "../main/header.php";?>
@@ -135,6 +137,8 @@
 						<div class="side_menu">
 							<a href="#" class="s_header">나의 서재</a>
 							<ul class="s_menu_list">
+								<li ><a href="../board/board_list.php">게시판</a></li>
+								<li><a href="../message_form.php">쪽지함</a></li>
 								<li><a href="member_form.php">회원가입</a></li>
 								<li><a href="#">개인공지사항</a></li>
 								<li><a href="#">대출/연장/예약조회</a></li>
@@ -155,12 +159,13 @@
 					<div class="mlib_title">회원가입</div>
 					<div class="login_box">
 						<form name="member_form" method="post" action="member_insert.php">
+							<input type="hidden" id="pInput" value="no" name="check" />   
 						<div class="join_form">
 							<div class="form id"> 
 								<div class="col1">아이디</div> 
 								<div class="col2 login"> 
 									<img src="../main/images/user.png" alt="ID"/>
-									<input type="text" name="id" class="guideText" placeholder="아이디" >
+									<input type="text"  id="idck" name="id" class="guideText" placeholder="아이디" >
 								</div>  
 								<div class="col3"> 
 									<p onclick="check_id()">중복확인</p> 

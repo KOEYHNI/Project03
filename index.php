@@ -39,7 +39,7 @@
 
 			function counter_reset(){
 				clearInterval(tid);
-				cnt = parseInt(60);
+				cnt = parseInt(30);
 				counter_init();
 			};
 
@@ -82,7 +82,7 @@
 			counter_init();
 		
 			var tid1;
-			var cnt1 = parseInt(30);//초기값(초단위)
+			var cnt1 = parseInt(900);//초기값(초단위)
 			
 			function counter_init1() {
 				tid1 = setInterval(function(){
@@ -92,14 +92,14 @@
 
 			function counter_reset1(){
 				clearInterval(tid1);
-				cnt1 = parseInt(30);
+				cnt1 = parseInt(900);
 				counter_init1();
 			};
 
 			function counter_run1(){
-				document.getElementById("counter1").innerText = time_format(cnt);
-				cnt--;
-				if(cnt < 0) {
+				document.getElementById("counter1").innerText = time_format(cnt1);
+				cnt1--;
+				if(cnt1 < 0) {
 					clearInterval(tid1);
 					self.location = "./login/logout.php";
 				}

@@ -11,6 +11,7 @@
 	<script src="../main/js/html5div.js"></script>
 	<script src="../main/js/html5shiv.js"></script>
 	<script src="../main/js/common.js"></script>
+	<script src="../main/js/login_count.js"></script>
 	<script>
     jQuery(document).ready(function(){
         $('.m_menu > li').eq(7).addClass('on');
@@ -51,7 +52,7 @@
 							<a href="#" class="s_header">이용안내</a>
 							<ul class="s_menu_list">
 								<li><a href="#">공지사항</a></li>
-								<li><a href="../main/sub2/sub2.php">자주하는질문</a></li>
+								<li><a href="./sub2/sub2.php">자주하는질문</a></li>
 								<li><a href="#">공개자료실</a></li>
 								<li><a href="#">이용시간</a></li>
 								<li><a href="#">대출회원가입안내</a></li>

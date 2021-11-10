@@ -31,7 +31,7 @@
 					</div>
 <?php 
 	} else {
-		$logged = $username."(".$userid.")님[level: ".$userlevel.",point: ".$userpoint."]";
+		$logged = $username." (".$userid.") 님[ level: ".$userlevel.", point: ".$userpoint. " ]";
 ?>					
 					<div class="member_if">
 						<span id="counter1"></span><span>후 자동 로그아웃</span> <input type="button" value="연장" onclick="counter_reset1()"/><?=$logged?>
@@ -48,7 +48,7 @@
 						<li class="show_balloon" title="회원가입 화면으로 이동합니다."><a href="./login/member_form.php">회원가입</a></li>
 <?php 
 	} else {
-		$logged = $username."(".$userid.")님[level: ".$userlevel.",point: ".$userpoint."]";
+		
 ?>	
 						<li class="show_balloon" title="로그아웃 화면으로 이동합니다."><a href="./login/logout.php">로그아웃</a></li>
 						<li class="show_balloon" title="정보수정 화면으로 이동합니다."><a href="./login/member_modify_form.php">정보수정</a></li>											
@@ -56,7 +56,7 @@
 	} 
 ?>				
 <?php 
-	if($userlevel==1){
+	if($userlevel == 1){
 ?>
 						<li class="show_balloon" title="로그인 화면으로 이동합니다."><a href="./admin/admin.php">관리자 모드</a></li>				
 <?php 

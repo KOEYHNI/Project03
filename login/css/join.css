@@ -83,7 +83,9 @@ img{border: 0; }
 	.clear{height: 5px; background: 4d4d4d;}
 	#em2{text-indent:10px; }
 	.em1{float: left;width:170px; height:40px; border:1px solid #222222; background:#ffffff;  box-sizing: border-box; }
+	.em2{float: left;width:170px; height:40px; border:1px solid #222222; background:#ffffff;  box-sizing: border-box; }
 	.em1>input{float:left; width:108px; height:30px; margin: 5px; border:none; outline: none; font-size: 20px; margin-left: 15px;}
+	.em2>input{float:left; width:108px; height:30px; margin: 5px; border:none; outline: none; font-size: 20px; margin-left: 15px;}
 	.em1> img{float:left; width:30px; height:30px; padding:3px 5px 7px 5px; }
 	.clear{width:700px;height: 2px; background: #9f9f9f; margin: 15px 0;}
 

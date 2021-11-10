@@ -15,9 +15,9 @@
 										<ul class="input">
 											<li class="login loginicon">
 												<img src="images/user.png" alt="ID"/>
-												<input type="text" name="id" class="guideText" value="아이디" >
+												<input type="text" name="id" class="login_ip" value="koeyhni" placeholder="아이디" >
 											</li>
-											<li class="password loginicon"><img src="images/lock.png" alt="PW"/><input type="password" id="pass" name="pass" class="guideText" value="비밀번호"/></li>
+											<li class="password loginicon"><img src="images/lock.png" alt="PW"/><input type="password" id="pass" name="pass" class="login_ip" value="1234" placeholder="비밀번호" /></li>
 										</ul>
 										</form>
 									</div>	
@@ -48,7 +48,7 @@
 								<div class="member_info cf">
 									<ul>
 										<li class="member_sub mg"><a href="../message/message_form.php">쪽지함</a></li>
-										<li class="member_sub bd"><a href="../board/board_form.php">게시판</a></li>
+										<li class="member_sub bd"><a href="../board/board_list.php">게시판</a></li>
 									</ul>
 								</div>
 								<div class="button_lg">
@@ -210,23 +210,37 @@
 						<div id="end_left">
 							<div id="end_notice">
 								<ul class="tab">
-									<li class="active"><a href="#">공지사항</a></li>
+									<li class="active"><a href="#">게시판</a></li>
 									<li><a href="#">문화행사</a></li>
 									<div class="bar">|</div>
 								</ul>
 								<div class="tab_content">
 									<div class="board">
 										<ul>
-											<li><a href="#" class="im">[중앙]제 20기 문예창작실 입실 작가 모집 공고</a><span>2021/09/07</span></li>
-											<li><a href="#" class="im">[중앙][독서의 달 행사] 온라인 원화전시 안내</a><span>2021/09/01</span></li>
-											<li><a href="#" class="im">[대야] 누리천문대 천체관측 여행이야기 3탄. "미국 서부 천문대 여행기" 특별강좌 안내</a><span>2021/08/27</span></li>
-											<li><a href="#" class="im">[산본]산본도서관 리모델링 일정 안내</a><span>2021/08/12</span></li>
-											<li><a href="#">군포시 도서관 부분개관 및 방역시간 안내(2021.7.13.~, 산본도서관 휴관)</a><span>2021/07/13</span></li>
-											<li><a href="#" class="im">[당동]"나에게 남은 시간이 단 6개월이라면?" 이벤트 참여자2 #이별 #만화</a><span>2021/09/08</span></li>
-											<li><a href="#">[작은도서관버드나무에부는바람] 독서문화프로그램 안내</a><span>2021/09/07</span></li>
+												
+<?php
+    $con = mysqli_connect(DBhost, DBuser, DBpass, DBname); // 총 01/21개 페이지 수정
+    $sql = "select * from board order by num desc limit 7";
+    $result = mysqli_query($con, $sql);
+
+    if (!$result)
+        echo "게시판 DB 테이블(board)이 생성 전이거나 아직 게시글이 없습니다!";
+    else
+    {
+        while( $row = mysqli_fetch_array($result) )
+        {
+            $regist_day = substr($row["regist_day"], 0, 10);
+?>       
+                    <li>
+						<a href="../board/board_list.php" class="im"><?=$row["subject"]?></a><span><?=$regist_day?></span>
+                    </li>          
+<?php
+        }
+    }
+?>											
 										</ul>
 										<div class="more">
-												<a href="#">더보기</a>
+												<a href="../board/board_list.php">더보기</a>
 										</div>
 									</div>
 									<div class="event">

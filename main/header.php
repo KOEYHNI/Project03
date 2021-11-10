@@ -1,6 +1,6 @@
+
 <?php 
 	include "../include/define.php";
-
 	session_start();
 	if(isset($_SESSION["userid"]))$userid= $_SESSION["userid"];
 	else $userid = "";
@@ -30,7 +30,7 @@
 					</div>
 <?php 
 	} else {
-		$logged = $username." (".$userid.") 님[level: ".$userlevel.",point: ".$userpoint."]";
+		$logged = $username." (".$userid.") 님[ level: ".$userlevel.", point: ".$userpoint. " ]";
 ?>	
 					<div class="member_if">
 						<span id="counter"></span><span>후 자동 로그아웃</span> <input type="button" value="연장" onclick="counter_reset()"/>
@@ -86,16 +86,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -166,7 +168,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="one_depth show_balloon" title="나의 서재"><a href="../login/login_form.php" tabindex="3">나의 서재</a>
+						<li class="one_depth show_balloon" title="나의 서재"><a href="../board/board_list.php" tabindex="3">나의 서재</a>
 							<div class="sub_menu">
 								<div class="two_depth">
 									<ul class="s_menu1">
@@ -179,16 +181,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -272,16 +276,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -365,16 +371,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -458,16 +466,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -551,16 +561,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -644,16 +656,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -737,16 +751,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>
@@ -830,16 +846,18 @@
 										<li><a href="../sub6/sub6.php">인기도서</a></li>
 									</ul>
 									<ul class="s_menu2">
-										<li><a href="../login/login_form.php">개인공지사항</a></li>
-										<li><a href="../login/login_form.php">대출/연장/예약조회</a></li>
-										<li><a href="../login/login_form.php">상호대차신청조회</a></li>
-										<li><a href="../login/login_form.php">희망도서신청/조회</a></li>
-										<li><a href="../login/login_form.php">책이음대출현황/이력</a></li>
-										<li><a href="../login/login_form.php">자원봉사신청내역</a></li>
-										<li><a href="../login/login_form.php">인문학강좌신청내역</a></li>
-										<li><a href="../login/login_form.php">개인정보수정/탈퇴</a></li>
-										<li><a href="../login/login_form.php">나의폴더</a></li>
-										<li><a href="../login/login_form.php">서평관리</a></li>
+										<li><a href="../board/board_list.php">게시판</a></li>
+										<li><a href="../message/message_form.php">쪽지함</a></li>
+										<li><a href="../board/board_list.php">개인공지사항</a></li>
+										<li><a href="../board/board_list.php">대출/연장/예약조회</a></li>
+										<li><a href="../board/board_list.php">상호대차신청조회</a></li>
+										<li><a href="../board/board_list.php">희망도서신청/조회</a></li>
+										<li><a href="../board/board_list.php">책이음대출현황/이력</a></li>
+										<li><a href="../board/board_list.php">자원봉사신청내역</a></li>
+										<li><a href="../board/board_list.php">인문학강좌신청내역</a></li>
+										<li><a href="../board/board_list.php">개인정보수정/탈퇴</a></li>
+										<li><a href="../board/board_list.php">나의폴더</a></li>
+										<li><a href="../board/board_list.php">서평관리</a></li>
 									</ul>
 									<ul class="s_menu3">
 										<li><a href="../sub7/sub7.php">전자책</a></li>

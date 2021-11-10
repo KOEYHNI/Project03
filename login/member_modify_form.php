@@ -11,6 +11,7 @@
 	<script src="../main/js/html5div.js"></script>
 	<script src="../main/js/html5shiv.js"></script>
 	<script src="../main/js/common.js"></script>
+	<script src="../main/js/login_count.js"></script>
 	<meta name="Author" content="김인혁"/>
 	<meta name="Keywords" content="김인혁,KimInHyeok, 포트폴리오, 김인혁 포트폴리오, portfolio, InHyeok's portfolio, 프로젝트, Project,  , 김 인 혁, 인혁 김, 인혁, rla, dls, gur, dlsgur"/>
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
@@ -70,7 +71,9 @@
 						<div class="side_menu">
 							<a href="#" class="s_header">나의 서재</a>
 							<ul class="s_menu_list">
-								<li><a href="member_form.php">회원가입</a></li>
+								<li ><a href="../board/board_list.php">게시판</a></li>
+								<li><a href="../message/message_form.php">쪽지함</a></li>
+								<li><a href="member_modify_form.php">정보수정</a></li>
 								<li><a href="#">개인공지사항</a></li>
 								<li><a href="#">대출/연장/예약조회</a></li>
 								<li><a href="#">상호대차신청조회</a></li>
@@ -100,8 +103,8 @@
 							</div> 
 							<div class="clear"></div>
 <?php
-if ($userid == "admin") {
-					echo "<script>alert(\"admin에서는 비밀번호를 수정할 수 없습니다!\");</script>";
+if ($userlevel==1) {
+					echo "<script>alert(\"관리자 아이디에서는 비밀번호를 수정할 수 없습니다!\");</script>";
 				    echo "
 											
 							<div class='form pass'> 
@@ -165,8 +168,8 @@ if ($userid == "admin") {
 										<input type="text" name="email1"class="guideText" value="<?=$email1?>">
 									</div>
 									<span>@</span>
-									<div class="mail2">
-										<input type="text" name="email2" class="guideText em2" value="<?=$email2?>">
+									<div class="em2">
+										<input type="text" name="email2" class="guideText" value="<?=$email2?>">
 									</div> 
 								</div>  
 							</div> 

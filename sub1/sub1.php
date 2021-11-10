@@ -10,6 +10,7 @@
 	<script src="../main/js/html5div.js"></script>
 	<script src="../main/js/html5shiv.js"></script>
 	<script src="../main/js/common.js"></script>
+	<script src="../main/js/login_count.js"></script>
 	<script>
     jQuery(document).ready(function(){
         $('.m_menu > li').eq(3).addClass('on');
@@ -21,7 +22,7 @@
 	<meta name="Description" content="김인혁의 포트폴리오 페이지 입니다"/>
 	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">	
 </head>
 <body>
 	<div id="wrap">

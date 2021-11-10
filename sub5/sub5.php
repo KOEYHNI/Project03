@@ -9,6 +9,7 @@
 	<script src="../main/js/html5div.js"></script>
 	<script src="../main/js/html5shiv.js"></script>
 	<script src="../main/js/common.js"></script>
+	<script src="../main/js/login_count.js"></script>
 	<script>
     jQuery(document).ready(function(){
         $('.m_menu > li').eq(6).addClass('on');

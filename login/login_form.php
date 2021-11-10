@@ -50,7 +50,19 @@
 						<div class="side_menu">
 							<a href="#" class="s_header">나의 서재</a>
 							<ul class="s_menu_list">
-								<li><a href="sub9.php">로그인</a></li>
+								<li ><a href="../board/board_list.php">게시판</a></li>
+								<li><a href="../message_form.php">쪽지함</a></li>
+<?php 
+	if(!$userid){
+?>									
+								<li><a href="login_form.php">로그인</a></li>
+<?php 
+	} else {
+?>								
+								<li><a href="member_modify_form.php">정보수정</a></li>	
+<?php 
+	} 
+?>	
 								<li><a href="#">개인공지사항</a></li>
 								<li><a href="#">대출/연장/예약조회</a></li>
 								<li><a href="#">상호대차신청조회</a></li>
@@ -77,7 +89,7 @@
 								<ul class="input">
 									<li class="login loginicon">
 										<img src="../main/images/user.png" alt="ID"/>
-										<input type="text" name="id" class="guideText" placeholder="아이디" value="admin" >
+										<input type="text" name="id" class="guideText" placeholder="아이디" value="koeyhni" >
 									</li>
 									<li class="password loginicon"><img src="../main/images/lock.png" alt="PW"/><input type="password" id="pass" name="pass" class="guideText"  placeholder="비밀번호" value="1234"/></li>
 								</ul>
