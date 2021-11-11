@@ -16,6 +16,17 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="../main/favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="../main/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../main/favicon/favicon-16x16.png">
+	<script>
+	  function check_input() {
+	      if (!document.repley_form.content.value.trim())
+	      {
+	          alert("내용을 입력하세요!");    
+	          document.repley_form.content.focus();
+	          return;
+	      }
+	      document.repley_form.submit();
+	   }
+	</script>	
 </head>
 <body> 
 <header>
@@ -137,6 +148,113 @@
 				<li><button onclick="location.href='board_delete.php?num=<?=$num?>&page=<?=$page?>'">삭제</button></li>
 				<li><button onclick="location.href='board_form.php'">글쓰기</button></li>
 		</ul>
+<?php  
+	$sql = "select * from repley where id_num=$num";
+	$result = mysqli_query($con, $sql);
+	$total_record = mysqli_num_rows($result); // 전체 글의 수
+?>	
+		<div class="rp_title">댓글 <span>(<?=$total_record?>)</span></div>
+
+<?php
+	$scale = 5;
+
+	// 전체 페이지 수($total_page) 계산 
+	if ($total_record % $scale == 0)     
+		$total_page = floor($total_record/$scale);      
+	else
+		$total_page = floor($total_record/$scale) + 1; 
+
+	// 표시할 페이지($page)에 따라 $start 계산  
+	$start = ($page - 1) * $scale;      
+
+	$number = $total_record - $start;
+
+	 for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)
+   {
+		mysqli_data_seek($result, $i);
+      	// 가져올 레코드로 위치(포인터) 이동
+      	$row = mysqli_fetch_array($result);
+		$name   = $row["name"];
+		$numm   = $row["num"];
+		$id    = $row["id"];
+		$content    = $row["content"];
+		$content = str_replace(" ", "&nbsp;", $content);
+		$content = str_replace("\n", "<br>", $content);
+		$regist_day  = $row["regist_day"];
+?>		
+	<ul id="repley_content">
+			<li>
+				<span class="re_wr"><b><?=$name?>(<?=$id?>) :</b></span>
+				<span class="re_con"><?=$content?></span>
+<?php 
+	if($userid == $id or $userlevel==1){
+?>	
+			<button onclick="location.href='repley_delete.php?numm=<?=$numm?>&num=<?=$num?>'">삭제</button>
+<?php 
+
+	}
+?>				
+				<span class="re_day"><?=$regist_day?></span>
+
+			</li>
+	</ul>
+<?php
+		$number--;
+	}
+	mysqli_close($con);
+?>
+		<ul id="page_numm"> 	
+<?php
+	if ($total_page>=2 && $page >= 2)	
+	{
+		$new_page = $page-1;
+		echo "<li><a href='board_view.php?num=$num&page=$new_page'><img src='../main/images/btn_pagination_prev2.png' width='6'/></a> </li>";
+	}		
+	else 
+		echo "<li>&nbsp;</li>";
+
+   	// 게시판 목록 하단에 페이지 링크 번호 출력
+   	for ($i=1; $i<=$total_page; $i++)
+   	{
+			if ($page == $i)     // 현재 페이지 번호 링크 안함
+			{
+				echo"<li><b> $i </b></li>";
+			}
+			else
+			{
+				echo "<li><a href='board_view.php?num=$num&page=$i'> $i </a> <li>";
+			}
+	}
+   	
+   	if ($total_page>=2 && $page != $total_page)		
+   	{
+			$new_page = $page+1;	
+			echo "<li class='mg5'> <a href='board_view.php?num=$num&page=$new_page'><img src='../main/images/btn_pagination_next2.png' width='6'/></a> </li>";
+		}
+		else 
+			echo "<li>&nbsp;</li>";
+?>
+		</ul>			
+<?php 
+	if(!$userid){
+?>	
+			<span class="no_id">댓글을 작성하시려면 <a href="../login/login.php">로그인</a> 후 이용해 주세요.</span>
+<?php 
+	} else {
+?>		
+	<form  name="repley_form" method="post" action="repley_insert.php?id_num=<?=$num?>&id=<?=$userid?>&name=<?=$username?>">
+	    	<div id="write_repley">
+					<span class="writer"><?=$username?>(<?=$userid?>)</span>    	
+				    <span class="text_box">
+				    		<textarea name="content" placeholder="댓글을 입력해주세요.(200자까지 입력가능합니다.)"></textarea>
+							<button type="button" onclick="check_input()" >댓글 달기</button>
+				    </span>
+	    	</div>	    	
+	    </form>
+<?php 
+	} 
+?>	
+	
 	</div> <!-- board_box -->
 			</div>
 		</section>

@@ -144,7 +144,21 @@
 ?>
 			<li>
 				<span class="col1"><?=$number?></span>
-				<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?></a></span>
+<?php  
+	$sqll = "select * from repley where id_num=$num";
+	$resultt = mysqli_query($con, $sqll);
+	$total_recordd = mysqli_num_rows($resultt); // 전체 글의 수
+?>					
+				<span class="col2"><a href="board_view.php?num=<?=$num?>&page=<?=$page?>"><?=$subject?>
+<?php				
+	if($total_recordd >=1){
+?>	
+	
+		<d>[<?=$total_recordd?>]</d> 
+<?php
+	}
+?>				
+				</a></span>
 				<span class="col3"><?=$name?></span>
 				<span class="col4"><?=$file_image?></span>
 				<span class="col5"><?=$regist_day?></span>
